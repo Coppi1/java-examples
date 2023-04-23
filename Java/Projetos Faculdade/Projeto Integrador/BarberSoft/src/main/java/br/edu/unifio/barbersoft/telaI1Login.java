@@ -52,21 +52,14 @@ public class telaI1Login extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1280, 720));
         setSize(new java.awt.Dimension(1280, 720));
-        getContentPane().setLayout(null);
 
         lbLogin.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         lbLogin.setText("Email:");
-        getContentPane().add(lbLogin);
-        lbLogin.setBounds(40, 130, 110, 40);
 
         lbCadastro.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         lbCadastro.setText("Senha:");
-        getContentPane().add(lbCadastro);
-        lbCadastro.setBounds(40, 190, 120, 40);
 
         txtEmailLogin.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
-        getContentPane().add(txtEmailLogin);
-        txtEmailLogin.setBounds(110, 120, 520, 40);
 
         pwSenhaLogin.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         pwSenhaLogin.addActionListener(new java.awt.event.ActionListener() {
@@ -74,8 +67,6 @@ public class telaI1Login extends javax.swing.JFrame {
                 pwSenhaLoginActionPerformed(evt);
             }
         });
-        getContentPane().add(pwSenhaLogin);
-        pwSenhaLogin.setBounds(110, 180, 520, 40);
 
         btLoginCLI.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         btLoginCLI.setText("Login Cliente");
@@ -84,8 +75,6 @@ public class telaI1Login extends javax.swing.JFrame {
                 btLoginCLIActionPerformed(evt);
             }
         });
-        getContentPane().add(btLoginCLI);
-        btLoginCLI.setBounds(110, 250, 190, 60);
 
         btLoginADM.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         btLoginADM.setText("Login Barbearia");
@@ -94,8 +83,6 @@ public class telaI1Login extends javax.swing.JFrame {
                 btLoginADMActionPerformed(evt);
             }
         });
-        getContentPane().add(btLoginADM);
-        btLoginADM.setBounds(350, 250, 210, 60);
 
         btRegistro.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         btRegistro.setText("Cadastro Barbearia");
@@ -104,8 +91,6 @@ public class telaI1Login extends javax.swing.JFrame {
                 btRegistroActionPerformed(evt);
             }
         });
-        getContentPane().add(btRegistro);
-        btRegistro.setBounds(350, 430, 210, 60);
 
         btRegistro1.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         btRegistro1.setText("Cadastro Cliente");
@@ -114,15 +99,65 @@ public class telaI1Login extends javax.swing.JFrame {
                 btRegistro1ActionPerformed(evt);
             }
         });
-        getContentPane().add(btRegistro1);
-        btRegistro1.setBounds(110, 430, 190, 60);
 
-        lbBackgroundCli.setIcon(new javax.swing.ImageIcon("C:\\Users\\educo\\OneDrive\\Documentos\\NetBeansProjects\\BarberSoft\\src\\main\\java\\BarberIMG\\bkgr_login.png")); // NOI18N
         lbBackgroundCli.setText("jLabel2");
         lbBackgroundCli.setMaximumSize(new java.awt.Dimension(1280, 720));
         lbBackgroundCli.setMinimumSize(new java.awt.Dimension(1280, 720));
-        getContentPane().add(lbBackgroundCli);
-        lbBackgroundCli.setBounds(0, 0, 1280, 720);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(110, 110, 110)
+                .addComponent(pwSenhaLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 520, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(350, 350, 350)
+                .addComponent(btLoginADM, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(110, 110, 110)
+                .addComponent(btRegistro1, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(50, 50, 50)
+                .addComponent(btRegistro, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(110, 110, 110)
+                .addComponent(txtEmailLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 520, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(110, 110, 110)
+                .addComponent(btLoginCLI, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addComponent(lbLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(lbCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(lbBackgroundCli, javax.swing.GroupLayout.PREFERRED_SIZE, 1280, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(180, 180, 180)
+                .addComponent(pwSenhaLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30)
+                .addComponent(btLoginADM, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(120, 120, 120)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btRegistro1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btRegistro, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(120, 120, 120)
+                .addComponent(txtEmailLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(250, 250, 250)
+                .addComponent(btLoginCLI, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(120, 120, 120)
+                .addComponent(lbLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(180, 180, 180)
+                .addComponent(lbCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(lbBackgroundCli, javax.swing.GroupLayout.PREFERRED_SIZE, 720, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
 
         pack();
         setLocationRelativeTo(null);
