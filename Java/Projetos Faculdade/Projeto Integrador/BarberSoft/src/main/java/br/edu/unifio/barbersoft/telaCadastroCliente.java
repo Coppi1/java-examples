@@ -217,9 +217,6 @@ public class telaCadastroCliente extends javax.swing.JFrame {
         jLabel2.setBounds(950, 90, 270, 190);
 
         lbCliBackGround.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BarberIMG/bkgr_img.png"))); // NOI18N
-        lbCliBackGround.setMaximumSize(new java.awt.Dimension(1280, 720));
-        lbCliBackGround.setMinimumSize(new java.awt.Dimension(1280, 720));
-        lbCliBackGround.setPreferredSize(new java.awt.Dimension(1280, 720));
         getContentPane().add(lbCliBackGround);
         lbCliBackGround.setBounds(0, 0, 1280, 720);
 
