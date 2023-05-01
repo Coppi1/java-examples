@@ -204,8 +204,6 @@ public class telaI1Login extends javax.swing.JFrame {
             }
             
            
-            
-
              
         }
         

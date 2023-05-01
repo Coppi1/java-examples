@@ -210,7 +210,6 @@ public class telaCadastroCliente extends javax.swing.JFrame {
         getContentPane().add(btCliClancel);
         btCliClancel.setBounds(410, 410, 190, 60);
 
-        lbBackgroundCadCli.setIcon(new javax.swing.ImageIcon("C:\\Users\\educo\\OneDrive\\Documentos\\NetBeansProjects\\BarberSoft\\src\\main\\java\\BarberIMG\\bkgr_cad_cli.png")); // NOI18N
         lbBackgroundCadCli.setText("jLabel1");
         lbBackgroundCadCli.setMaximumSize(new java.awt.Dimension(1280, 720));
         lbBackgroundCadCli.setMinimumSize(new java.awt.Dimension(1280, 720));

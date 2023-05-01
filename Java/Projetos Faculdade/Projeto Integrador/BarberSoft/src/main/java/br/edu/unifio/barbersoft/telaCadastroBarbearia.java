@@ -202,7 +202,6 @@ public class telaCadastroBarbearia extends javax.swing.JFrame {
         getContentPane().add(btAdmCancel);
         btAdmCancel.setBounds(400, 440, 190, 60);
 
-        lbCadAdmBackground.setIcon(new javax.swing.ImageIcon("C:\\Users\\educo\\OneDrive\\Documentos\\NetBeansProjects\\BarberSoft\\src\\main\\java\\BarberIMG\\bkgr_cad_barb.png")); // NOI18N
         lbCadAdmBackground.setText("jLabel1");
         lbCadAdmBackground.setMaximumSize(new java.awt.Dimension(1280, 720));
         lbCadAdmBackground.setMinimumSize(new java.awt.Dimension(1280, 720));
