@@ -47,9 +47,9 @@ public class telaI1Login extends javax.swing.JFrame {
         btLoginADM = new javax.swing.JButton();
         btRegistro = new javax.swing.JButton();
         btRegistro1 = new javax.swing.JButton();
-        lbBackgroundCli = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(199, 161, 135));
         setPreferredSize(new java.awt.Dimension(1280, 720));
         setSize(new java.awt.Dimension(1280, 720));
         getContentPane().setLayout(null);
@@ -57,7 +57,7 @@ public class telaI1Login extends javax.swing.JFrame {
         lbLogin.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         lbLogin.setText("Email:");
         getContentPane().add(lbLogin);
-        lbLogin.setBounds(40, 130, 110, 40);
+        lbLogin.setBounds(50, 130, 110, 40);
 
         lbCadastro.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         lbCadastro.setText("Senha:");
@@ -66,7 +66,7 @@ public class telaI1Login extends javax.swing.JFrame {
 
         txtEmailLogin.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         getContentPane().add(txtEmailLogin);
-        txtEmailLogin.setBounds(110, 120, 520, 40);
+        txtEmailLogin.setBounds(120, 130, 520, 40);
 
         pwSenhaLogin.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         pwSenhaLogin.addActionListener(new java.awt.event.ActionListener() {
@@ -75,7 +75,7 @@ public class telaI1Login extends javax.swing.JFrame {
             }
         });
         getContentPane().add(pwSenhaLogin);
-        pwSenhaLogin.setBounds(110, 180, 520, 40);
+        pwSenhaLogin.setBounds(120, 190, 520, 40);
 
         btLoginCLI.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         btLoginCLI.setText("Login Cliente");
@@ -116,13 +116,6 @@ public class telaI1Login extends javax.swing.JFrame {
         });
         getContentPane().add(btRegistro1);
         btRegistro1.setBounds(110, 430, 190, 60);
-
-        lbBackgroundCli.setIcon(new javax.swing.ImageIcon("C:\\Users\\educo\\OneDrive\\Documentos\\NetBeansProjects\\BarberSoft\\src\\main\\java\\BarberIMG\\bkgr_login.png")); // NOI18N
-        lbBackgroundCli.setText("jLabel2");
-        lbBackgroundCli.setMaximumSize(new java.awt.Dimension(1280, 720));
-        lbBackgroundCli.setMinimumSize(new java.awt.Dimension(1280, 720));
-        getContentPane().add(lbBackgroundCli);
-        lbBackgroundCli.setBounds(0, 0, 1280, 720);
 
         pack();
         setLocationRelativeTo(null);
@@ -250,7 +243,6 @@ public class telaI1Login extends javax.swing.JFrame {
     public javax.swing.JButton btLoginCLI;
     public javax.swing.JButton btRegistro;
     public javax.swing.JButton btRegistro1;
-    public javax.swing.JLabel lbBackgroundCli;
     public javax.swing.JLabel lbCadastro;
     public javax.swing.JLabel lbLogin;
     public javax.swing.JPasswordField pwSenhaLogin;

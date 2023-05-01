@@ -67,7 +67,8 @@ public class telaCadastroCliente extends javax.swing.JFrame {
         pwCliReSenha = new javax.swing.JPasswordField();
         btCliCadastrar = new javax.swing.JButton();
         btCliClancel = new javax.swing.JButton();
-        lbBackgroundCadCli = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        lbCliBackGround = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1280, 720));
@@ -77,64 +78,64 @@ public class telaCadastroCliente extends javax.swing.JFrame {
         lbCliNomeCompleto.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         lbCliNomeCompleto.setText("Nome Completo:");
         getContentPane().add(lbCliNomeCompleto);
-        lbCliNomeCompleto.setBounds(10, 90, 160, 40);
+        lbCliNomeCompleto.setBounds(10, 150, 180, 20);
 
         lbCliSexo.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         lbCliSexo.setText("Sexo:");
         getContentPane().add(lbCliSexo);
-        lbCliSexo.setBounds(110, 130, 50, 40);
+        lbCliSexo.setBounds(160, 170, 60, 40);
 
         lbCliCep.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         lbCliCep.setText("CEP:");
         getContentPane().add(lbCliCep);
-        lbCliCep.setBounds(110, 170, 69, 40);
+        lbCliCep.setBounds(130, 220, 69, 40);
 
         lbCliCidade.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         lbCliCidade.setText("Cidade:");
         getContentPane().add(lbCliCidade);
-        lbCliCidade.setBounds(90, 210, 69, 40);
+        lbCliCidade.setBounds(100, 260, 90, 40);
 
         lbCliEmail.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         lbCliEmail.setText("E-mail:");
         getContentPane().add(lbCliEmail);
-        lbCliEmail.setBounds(90, 250, 70, 40);
+        lbCliEmail.setBounds(110, 300, 80, 40);
 
         lbCliTelefone.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         lbCliTelefone.setText("Telefone:");
         getContentPane().add(lbCliTelefone);
-        lbCliTelefone.setBounds(70, 290, 90, 40);
+        lbCliTelefone.setBounds(90, 340, 110, 40);
 
         lbCliSenha.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         lbCliSenha.setText("Senha:");
         getContentPane().add(lbCliSenha);
-        lbCliSenha.setBounds(100, 330, 60, 40);
+        lbCliSenha.setBounds(110, 380, 90, 40);
 
         lbCliRepeditSenha.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         lbCliRepeditSenha.setText("Repetir Senha:");
         getContentPane().add(lbCliRepeditSenha);
-        lbCliRepeditSenha.setBounds(30, 370, 130, 40);
+        lbCliRepeditSenha.setBounds(30, 420, 180, 40);
 
         txtCliNome.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         getContentPane().add(txtCliNome);
-        txtCliNome.setBounds(170, 90, 520, 30);
+        txtCliNome.setBounds(200, 140, 520, 30);
 
         btgroupSexo.add(radCliSexHomem);
         radCliSexHomem.setFont(new java.awt.Font("Perpetua", 0, 18)); // NOI18N
         radCliSexHomem.setText("Homem");
         getContentPane().add(radCliSexHomem);
-        radCliSexHomem.setBounds(170, 130, 110, 30);
+        radCliSexHomem.setBounds(250, 180, 110, 30);
 
         btgroupSexo.add(radCliSexMulher);
         radCliSexMulher.setFont(new java.awt.Font("Perpetua", 0, 18)); // NOI18N
         radCliSexMulher.setText("Mulher");
         getContentPane().add(radCliSexMulher);
-        radCliSexMulher.setBounds(290, 130, 100, 30);
+        radCliSexMulher.setBounds(370, 180, 100, 30);
 
         btgroupSexo.add(radCliSexOutros);
         radCliSexOutros.setFont(new java.awt.Font("Perpetua", 0, 18)); // NOI18N
         radCliSexOutros.setText("Outros");
         getContentPane().add(radCliSexOutros);
-        radCliSexOutros.setBounds(400, 130, 100, 30);
+        radCliSexOutros.setBounds(480, 180, 100, 30);
 
         try {
             ftxtCliCEP.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("########")));
@@ -143,7 +144,7 @@ public class telaCadastroCliente extends javax.swing.JFrame {
         }
         ftxtCliCEP.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         getContentPane().add(ftxtCliCEP);
-        ftxtCliCEP.setBounds(170, 170, 380, 30);
+        ftxtCliCEP.setBounds(200, 220, 380, 30);
 
         btCliBuscaCep.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         btCliBuscaCep.setText("Buscar CEP");
@@ -153,16 +154,16 @@ public class telaCadastroCliente extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btCliBuscaCep);
-        btCliBuscaCep.setBounds(550, 170, 140, 30);
+        btCliBuscaCep.setBounds(590, 220, 170, 30);
 
         txtCliCidade.setEditable(false);
         txtCliCidade.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         getContentPane().add(txtCliCidade);
-        txtCliCidade.setBounds(170, 210, 520, 30);
+        txtCliCidade.setBounds(200, 260, 520, 30);
 
         txtCliEmail.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         getContentPane().add(txtCliEmail);
-        txtCliEmail.setBounds(170, 250, 520, 30);
+        txtCliEmail.setBounds(200, 300, 520, 30);
 
         try {
             ftxtCliTelefone.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("(##) #####-####")));
@@ -170,7 +171,7 @@ public class telaCadastroCliente extends javax.swing.JFrame {
             ex.printStackTrace();
         }
         getContentPane().add(ftxtCliTelefone);
-        ftxtCliTelefone.setBounds(170, 290, 520, 30);
+        ftxtCliTelefone.setBounds(200, 340, 520, 30);
 
         pwCliSenha.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         pwCliSenha.addActionListener(new java.awt.event.ActionListener() {
@@ -179,7 +180,7 @@ public class telaCadastroCliente extends javax.swing.JFrame {
             }
         });
         getContentPane().add(pwCliSenha);
-        pwCliSenha.setBounds(170, 330, 520, 30);
+        pwCliSenha.setBounds(200, 380, 520, 30);
 
         pwCliReSenha.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         pwCliReSenha.addActionListener(new java.awt.event.ActionListener() {
@@ -188,7 +189,7 @@ public class telaCadastroCliente extends javax.swing.JFrame {
             }
         });
         getContentPane().add(pwCliReSenha);
-        pwCliReSenha.setBounds(170, 370, 520, 30);
+        pwCliReSenha.setBounds(200, 420, 520, 30);
 
         btCliCadastrar.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         btCliCadastrar.setText("Concuir Cadastro");
@@ -198,7 +199,7 @@ public class telaCadastroCliente extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btCliCadastrar);
-        btCliCadastrar.setBounds(170, 410, 190, 60);
+        btCliCadastrar.setBounds(200, 460, 190, 60);
 
         btCliClancel.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         btCliClancel.setText("Cancelar");
@@ -208,15 +209,19 @@ public class telaCadastroCliente extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btCliClancel);
-        btCliClancel.setBounds(410, 410, 190, 60);
+        btCliClancel.setBounds(440, 460, 190, 60);
 
-        lbBackgroundCadCli.setIcon(new javax.swing.ImageIcon("C:\\Users\\educo\\OneDrive\\Documentos\\NetBeansProjects\\BarberSoft\\src\\main\\java\\BarberIMG\\bkgr_cad_cli.png")); // NOI18N
-        lbBackgroundCadCli.setText("jLabel1");
-        lbBackgroundCadCli.setMaximumSize(new java.awt.Dimension(1280, 720));
-        lbBackgroundCadCli.setMinimumSize(new java.awt.Dimension(1280, 720));
-        lbBackgroundCadCli.setPreferredSize(new java.awt.Dimension(1280, 720));
-        getContentPane().add(lbBackgroundCadCli);
-        lbBackgroundCadCli.setBounds(0, 0, 1280, 720);
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BarberIMG/icon30.png"))); // NOI18N
+        jLabel2.setText("jLabel2");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(950, 90, 270, 190);
+
+        lbCliBackGround.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BarberIMG/bkgr_img.png"))); // NOI18N
+        lbCliBackGround.setMaximumSize(new java.awt.Dimension(1280, 720));
+        lbCliBackGround.setMinimumSize(new java.awt.Dimension(1280, 720));
+        lbCliBackGround.setPreferredSize(new java.awt.Dimension(1280, 720));
+        getContentPane().add(lbCliBackGround);
+        lbCliBackGround.setBounds(0, 0, 1280, 720);
 
         pack();
         setLocationRelativeTo(null);
@@ -373,7 +378,8 @@ public class telaCadastroCliente extends javax.swing.JFrame {
     private javax.swing.ButtonGroup btgroupSexo;
     private javax.swing.JFormattedTextField ftxtCliCEP;
     private javax.swing.JFormattedTextField ftxtCliTelefone;
-    private javax.swing.JLabel lbBackgroundCadCli;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel lbCliBackGround;
     private javax.swing.JLabel lbCliCep;
     private javax.swing.JLabel lbCliCidade;
     private javax.swing.JLabel lbCliEmail;
