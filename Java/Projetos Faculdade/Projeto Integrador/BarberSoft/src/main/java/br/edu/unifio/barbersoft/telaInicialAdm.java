@@ -27,6 +27,12 @@ public class telaInicialAdm extends javax.swing.JFrame {
     private void initComponents() {
 
         btnAgendamento = new javax.swing.JButton();
+        btnConfHorario = new javax.swing.JButton();
+        btnProfissionais = new javax.swing.JButton();
+        btnServicos = new javax.swing.JButton();
+        btnClientesAdm = new javax.swing.JButton();
+        btnOpcoesBarbearia = new javax.swing.JButton();
+        btnSuporteAdm = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -37,31 +43,134 @@ public class telaInicialAdm extends javax.swing.JFrame {
             }
         });
 
+        btnConfHorario.setText("CONFIGURAÇÃO DE HORARIO");
+        btnConfHorario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnConfHorarioActionPerformed(evt);
+            }
+        });
+
+        btnProfissionais.setText("PROFISSIONAIS");
+        btnProfissionais.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnProfissionaisActionPerformed(evt);
+            }
+        });
+
+        btnServicos.setText("SERVIÇOS");
+        btnServicos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnServicosActionPerformed(evt);
+            }
+        });
+
+        btnClientesAdm.setText("CLIENTES");
+        btnClientesAdm.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnClientesAdmActionPerformed(evt);
+            }
+        });
+
+        btnOpcoesBarbearia.setText("OPÇÕES DA BARBEARIA");
+        btnOpcoesBarbearia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnOpcoesBarbeariaActionPerformed(evt);
+            }
+        });
+
+        btnSuporteAdm.setText("SUPORTE");
+        btnSuporteAdm.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSuporteAdmActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(53, 53, 53)
-                .addComponent(btnAgendamento, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(497, Short.MAX_VALUE))
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnAgendamento, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnProfissionais, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnClientesAdm, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(40, 40, 40)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnServicos, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnOpcoesBarbearia, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(39, 39, 39)
+                        .addComponent(btnSuporteAdm, javax.swing.GroupLayout.DEFAULT_SIZE, 118, Short.MAX_VALUE))
+                    .addComponent(btnConfHorario))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(69, 69, 69)
-                .addComponent(btnAgendamento, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(347, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnAgendamento, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnConfHorario, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(btnProfissionais, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnServicos, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnClientesAdm, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnOpcoesBarbearia, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnSuporteAdm, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(56, Short.MAX_VALUE))
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAgendamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgendamentoActionPerformed
       
         telaAgendamentoAdm telaAgendamentoAdm = new telaAgendamentoAdm();
-        setVisible(true);
+        telaAgendamentoAdm.setVisible(true);
     }//GEN-LAST:event_btnAgendamentoActionPerformed
+
+    private void btnConfHorarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConfHorarioActionPerformed
+      
+        telaConfiguracaoHorarioAdm telaConfiguracaoHorarioAdm = new telaConfiguracaoHorarioAdm();
+        telaConfiguracaoHorarioAdm.setVisible(true);
+        
+    }//GEN-LAST:event_btnConfHorarioActionPerformed
+
+    private void btnProfissionaisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProfissionaisActionPerformed
+       
+        telaProfissionaisAdm telaProfissionaisAdm = new telaProfissionaisAdm();
+        telaProfissionaisAdm.setVisible(true);
+        
+    }//GEN-LAST:event_btnProfissionaisActionPerformed
+
+    private void btnServicosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnServicosActionPerformed
+      
+        telaServicosAdm telaServicosAdm = new telaServicosAdm();
+        telaServicosAdm.setVisible(true);
+    }//GEN-LAST:event_btnServicosActionPerformed
+
+    private void btnClientesAdmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClientesAdmActionPerformed
+      
+        telaClientesAdm telaClientesAdm = new telaClientesAdm();
+        telaClientesAdm.setVisible(true);
+    }//GEN-LAST:event_btnClientesAdmActionPerformed
+
+    private void btnOpcoesBarbeariaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOpcoesBarbeariaActionPerformed
+        
+        telaOpcoesBarbearia telaOpcoesBarbearia = new telaOpcoesBarbearia();
+        telaOpcoesBarbearia.setVisible(true);
+    }//GEN-LAST:event_btnOpcoesBarbeariaActionPerformed
+
+    private void btnSuporteAdmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSuporteAdmActionPerformed
+       
+        telaSuporteAdm telaSuporteAdm = new telaSuporteAdm();
+        telaSuporteAdm.setVisible(true);
+    }//GEN-LAST:event_btnSuporteAdmActionPerformed
 
     /**
      * @param args the command line arguments
@@ -100,5 +209,11 @@ public class telaInicialAdm extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAgendamento;
+    private javax.swing.JButton btnClientesAdm;
+    private javax.swing.JButton btnConfHorario;
+    private javax.swing.JButton btnOpcoesBarbearia;
+    private javax.swing.JButton btnProfissionais;
+    private javax.swing.JButton btnServicos;
+    private javax.swing.JButton btnSuporteAdm;
     // End of variables declaration//GEN-END:variables
 }
