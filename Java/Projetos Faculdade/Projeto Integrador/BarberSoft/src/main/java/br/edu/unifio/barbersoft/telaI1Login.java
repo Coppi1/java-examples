@@ -85,7 +85,7 @@ public class telaI1Login extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btLoginCLI);
-        btLoginCLI.setBounds(110, 250, 190, 60);
+        btLoginCLI.setBounds(120, 250, 190, 60);
 
         btLoginADM.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         btLoginADM.setText("Login Barbearia");
@@ -95,7 +95,7 @@ public class telaI1Login extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btLoginADM);
-        btLoginADM.setBounds(350, 250, 210, 60);
+        btLoginADM.setBounds(350, 250, 200, 60);
 
         btRegistro.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         btRegistro.setText("Cadastro Barbearia");
@@ -105,7 +105,7 @@ public class telaI1Login extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btRegistro);
-        btRegistro.setBounds(350, 430, 210, 60);
+        btRegistro.setBounds(370, 430, 240, 60);
 
         btRegistro1.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         btRegistro1.setText("Cadastro Cliente");
@@ -115,7 +115,7 @@ public class telaI1Login extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btRegistro1);
-        btRegistro1.setBounds(110, 430, 190, 60);
+        btRegistro1.setBounds(120, 430, 210, 60);
 
         pack();
         setLocationRelativeTo(null);

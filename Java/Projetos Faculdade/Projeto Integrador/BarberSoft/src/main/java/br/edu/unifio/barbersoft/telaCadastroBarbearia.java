@@ -59,51 +59,53 @@ public class telaCadastroBarbearia extends javax.swing.JFrame {
         btAdmBuscaCep = new javax.swing.JButton();
         btAdmCadastrar = new javax.swing.JButton();
         btAdmCancel = new javax.swing.JButton();
-        lbCadAdmBackground = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        lbCliBackGround = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setBackground(new java.awt.Color(187, 187, 187));
         setPreferredSize(new java.awt.Dimension(1280, 720));
         setSize(new java.awt.Dimension(1280, 720));
         getContentPane().setLayout(null);
 
         lbNomeFanstasia.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
-        lbNomeFanstasia.setText("Nome Fantasia: ");
+        lbNomeFanstasia.setText("Nome da Barbearia: ");
         getContentPane().add(lbNomeFanstasia);
-        lbNomeFanstasia.setBounds(10, 70, 150, 30);
+        lbNomeFanstasia.setBounds(50, 100, 230, 30);
 
         lbCnpj.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         lbCnpj.setText("CNPJ:");
         getContentPane().add(lbCnpj);
-        lbCnpj.setBounds(80, 110, 60, 30);
+        lbCnpj.setBounds(200, 140, 80, 30);
 
         lbAdmTelefone.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         lbAdmTelefone.setText("Telefone:");
         getContentPane().add(lbAdmTelefone);
-        lbAdmTelefone.setBounds(60, 150, 90, 30);
+        lbAdmTelefone.setBounds(170, 180, 110, 30);
 
         lbAdmEmail.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         lbAdmEmail.setText("E-mail:");
         getContentPane().add(lbAdmEmail);
-        lbAdmEmail.setBounds(80, 190, 70, 30);
+        lbAdmEmail.setBounds(190, 220, 80, 30);
 
         lbAdmSenha.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         lbAdmSenha.setText("Senha:");
         getContentPane().add(lbAdmSenha);
-        lbAdmSenha.setBounds(80, 230, 60, 30);
+        lbAdmSenha.setBounds(190, 260, 80, 30);
 
         lbAdmRepSenha.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         lbAdmRepSenha.setText("Repetir Senha:");
         getContentPane().add(lbAdmRepSenha);
-        lbAdmRepSenha.setBounds(10, 270, 130, 30);
+        lbAdmRepSenha.setBounds(110, 300, 170, 30);
 
         lbAdmNomeRepres.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         lbAdmNomeRepres.setText("Representante:");
         getContentPane().add(lbAdmNomeRepres);
-        lbAdmNomeRepres.setBounds(10, 310, 150, 30);
+        lbAdmNomeRepres.setBounds(105, 340, 170, 30);
 
         txtAdmNomeF.setFont(new java.awt.Font("Perpetua", 0, 20)); // NOI18N
         getContentPane().add(txtAdmNomeF);
-        txtAdmNomeF.setBounds(150, 70, 520, 30);
+        txtAdmNomeF.setBounds(280, 100, 520, 30);
 
         try {
             ftxtAdmCnpj.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##.###.###/####-##")));
@@ -112,7 +114,7 @@ public class telaCadastroBarbearia extends javax.swing.JFrame {
         }
         ftxtAdmCnpj.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         getContentPane().add(ftxtAdmCnpj);
-        ftxtAdmCnpj.setBounds(150, 110, 520, 30);
+        ftxtAdmCnpj.setBounds(280, 140, 520, 30);
 
         try {
             ftxtAdmTelefone.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("(##) #####-####")));
@@ -121,11 +123,11 @@ public class telaCadastroBarbearia extends javax.swing.JFrame {
         }
         ftxtAdmTelefone.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         getContentPane().add(ftxtAdmTelefone);
-        ftxtAdmTelefone.setBounds(150, 150, 520, 30);
+        ftxtAdmTelefone.setBounds(280, 180, 520, 30);
 
         txtAdmEmail.setFont(new java.awt.Font("Perpetua", 0, 20)); // NOI18N
         getContentPane().add(txtAdmEmail);
-        txtAdmEmail.setBounds(150, 190, 520, 30);
+        txtAdmEmail.setBounds(280, 220, 520, 30);
 
         pwAdmSenha.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         pwAdmSenha.addActionListener(new java.awt.event.ActionListener() {
@@ -134,7 +136,7 @@ public class telaCadastroBarbearia extends javax.swing.JFrame {
             }
         });
         getContentPane().add(pwAdmSenha);
-        pwAdmSenha.setBounds(150, 230, 520, 30);
+        pwAdmSenha.setBounds(280, 260, 520, 30);
 
         pwAdmReSenha.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         pwAdmReSenha.addActionListener(new java.awt.event.ActionListener() {
@@ -143,26 +145,36 @@ public class telaCadastroBarbearia extends javax.swing.JFrame {
             }
         });
         getContentPane().add(pwAdmReSenha);
-        pwAdmReSenha.setBounds(150, 270, 520, 30);
+        pwAdmReSenha.setBounds(280, 300, 520, 30);
 
         txtAdmRepres.setFont(new java.awt.Font("Perpetua", 0, 20)); // NOI18N
+        txtAdmRepres.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtAdmRepresActionPerformed(evt);
+            }
+        });
         getContentPane().add(txtAdmRepres);
-        txtAdmRepres.setBounds(150, 310, 520, 30);
+        txtAdmRepres.setBounds(280, 340, 520, 30);
 
         lbAdmCep.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         lbAdmCep.setText("CEP:");
         getContentPane().add(lbAdmCep);
-        lbAdmCep.setBounds(90, 350, 69, 40);
+        lbAdmCep.setBounds(210, 380, 56, 30);
 
         lbAdmCidade.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         lbAdmCidade.setText("Cidade:");
         getContentPane().add(lbAdmCidade);
-        lbAdmCidade.setBounds(70, 390, 69, 40);
+        lbAdmCidade.setBounds(180, 420, 100, 30);
 
         txtAdmCidade.setEditable(false);
         txtAdmCidade.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
+        txtAdmCidade.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtAdmCidadeActionPerformed(evt);
+            }
+        });
         getContentPane().add(txtAdmCidade);
-        txtAdmCidade.setBounds(150, 390, 520, 30);
+        txtAdmCidade.setBounds(280, 420, 520, 30);
 
         try {
             ftxtAdmCEP.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("########")));
@@ -170,7 +182,7 @@ public class telaCadastroBarbearia extends javax.swing.JFrame {
             ex.printStackTrace();
         }
         getContentPane().add(ftxtAdmCEP);
-        ftxtAdmCEP.setBounds(150, 350, 380, 30);
+        ftxtAdmCEP.setBounds(280, 380, 380, 30);
 
         btAdmBuscaCep.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         btAdmBuscaCep.setText("Buscar CEP");
@@ -180,7 +192,7 @@ public class telaCadastroBarbearia extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btAdmBuscaCep);
-        btAdmBuscaCep.setBounds(530, 350, 140, 30);
+        btAdmBuscaCep.setBounds(660, 380, 140, 30);
 
         btAdmCadastrar.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         btAdmCadastrar.setText("Concuir Cadastro");
@@ -190,7 +202,7 @@ public class telaCadastroBarbearia extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btAdmCadastrar);
-        btAdmCadastrar.setBounds(150, 440, 190, 60);
+        btAdmCadastrar.setBounds(280, 480, 220, 60);
 
         btAdmCancel.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         btAdmCancel.setText("Cancelar");
@@ -200,14 +212,16 @@ public class telaCadastroBarbearia extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btAdmCancel);
-        btAdmCancel.setBounds(400, 440, 190, 60);
+        btAdmCancel.setBounds(600, 480, 190, 60);
 
-        lbCadAdmBackground.setText("jLabel1");
-        lbCadAdmBackground.setMaximumSize(new java.awt.Dimension(1280, 720));
-        lbCadAdmBackground.setMinimumSize(new java.awt.Dimension(1280, 720));
-        lbCadAdmBackground.setPreferredSize(new java.awt.Dimension(1280, 720));
-        getContentPane().add(lbCadAdmBackground);
-        lbCadAdmBackground.setBounds(0, 0, 1280, 720);
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BarberIMG/icon30.png"))); // NOI18N
+        jLabel2.setText("jLabel2");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(960, 30, 270, 190);
+
+        lbCliBackGround.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BarberIMG/bkgr_img.png"))); // NOI18N
+        getContentPane().add(lbCliBackGround);
+        lbCliBackGround.setBounds(0, 0, 1280, 720);
 
         pack();
         setLocationRelativeTo(null);
@@ -269,6 +283,14 @@ public class telaCadastroBarbearia extends javax.swing.JFrame {
             Logger.getLogger(telaCadastroCliente.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_btAdmBuscaCepActionPerformed
+
+    private void txtAdmRepresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAdmRepresActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtAdmRepresActionPerformed
+
+    private void txtAdmCidadeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAdmCidadeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtAdmCidadeActionPerformed
 
     
     
@@ -371,6 +393,7 @@ public class telaCadastroBarbearia extends javax.swing.JFrame {
     private javax.swing.JFormattedTextField ftxtAdmCEP;
     private javax.swing.JFormattedTextField ftxtAdmCnpj;
     private javax.swing.JFormattedTextField ftxtAdmTelefone;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel lbAdmCep;
     private javax.swing.JLabel lbAdmCidade;
     private javax.swing.JLabel lbAdmEmail;
@@ -378,7 +401,7 @@ public class telaCadastroBarbearia extends javax.swing.JFrame {
     private javax.swing.JLabel lbAdmRepSenha;
     private javax.swing.JLabel lbAdmSenha;
     private javax.swing.JLabel lbAdmTelefone;
-    private javax.swing.JLabel lbCadAdmBackground;
+    private javax.swing.JLabel lbCliBackGround;
     private javax.swing.JLabel lbCnpj;
     private javax.swing.JLabel lbNomeFanstasia;
     private javax.swing.JPasswordField pwAdmReSenha;
