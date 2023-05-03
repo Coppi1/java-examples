@@ -7,6 +7,7 @@ package br.edu.unifio.barbersoft;
 import EnderecoViaCep.Endereco;
 import EnderecoViaCepService.ViaCepService;
 import LoginBarbersoftController.loginControler;
+import LoginBarbersoftController.loginControlerMysql;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.logging.Level;
@@ -123,20 +124,38 @@ public class telaCadastroCliente extends javax.swing.JFrame {
         btgroupSexo.add(radCliSexHomem);
         radCliSexHomem.setFont(new java.awt.Font("Perpetua", 0, 18)); // NOI18N
         radCliSexHomem.setText("Homem");
+        radCliSexHomem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radCliSexHomemActionPerformed(evt);
+            }
+        });
         getContentPane().add(radCliSexHomem);
         radCliSexHomem.setBounds(200, 190, 110, 30);
 
         btgroupSexo.add(radCliSexMulher);
         radCliSexMulher.setFont(new java.awt.Font("Perpetua", 0, 18)); // NOI18N
         radCliSexMulher.setText("Mulher");
+        radCliSexMulher.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radCliSexMulherActionPerformed(evt);
+            }
+        });
         getContentPane().add(radCliSexMulher);
-        radCliSexMulher.setBounds(320, 190, 100, 30);
+
+        radCliSexMulher.setBounds(370, 180, 100, 30);
+
+       
+
 
         btgroupSexo.add(radCliSexOutros);
         radCliSexOutros.setFont(new java.awt.Font("Perpetua", 0, 18)); // NOI18N
         radCliSexOutros.setText("Outros");
         getContentPane().add(radCliSexOutros);
-        radCliSexOutros.setBounds(430, 190, 100, 30);
+
+        radCliSexOutros.setBounds(480, 180, 100, 30);
+
+        radCliSexOutros.setBounds(410, 190, 100, 30);
+
 
         try {
             ftxtCliCEP.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("########")));
@@ -155,7 +174,10 @@ public class telaCadastroCliente extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btCliBuscaCep);
-        btCliBuscaCep.setBounds(590, 230, 170, 30);
+
+        
+        btCliBuscaCep.setBounds(590, 230, 161, 30);
+
 
         txtCliCidade.setEditable(false);
         txtCliCidade.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
@@ -171,6 +193,11 @@ public class telaCadastroCliente extends javax.swing.JFrame {
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
+        ftxtCliTelefone.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ftxtCliTelefoneActionPerformed(evt);
+            }
+        });
         getContentPane().add(ftxtCliTelefone);
         ftxtCliTelefone.setBounds(200, 350, 520, 30);
 
@@ -212,17 +239,33 @@ public class telaCadastroCliente extends javax.swing.JFrame {
         getContentPane().add(btCliClancel);
         btCliClancel.setBounds(450, 490, 190, 60);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BarberIMG/icon30.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Eduardo\\Documents\\GitHub\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\icon30.png")); // NOI18N
         jLabel2.setText("jLabel2");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(960, 40, 270, 190);
+
+    
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BarberIMG/cad_cli75.png"))); // NOI18N
         jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(30, 20, 880, 80);
+         Updated upstream
+        jLabel2.setBounds(950, 90, 270, 190);
 
         lbCliBackGround.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BarberIMG/bkgr_img.png"))); // NOI18N
+        lbCliBackGround.setMaximumSize(new java.awt.Dimension(1280, 720));
+        lbCliBackGround.setMinimumSize(new java.awt.Dimension(1280, 720));
+        lbCliBackGround.setPreferredSize(new java.awt.Dimension(1280, 720));
+
+        jLabel2.setBounds(960, 40, 270, 190);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Eduardo\\Documents\\GitHub\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\cad_cli75.png")); // NOI18N
+        jLabel1.setText("jLabel1");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(30, 20, 880, 80);
+
+        lbCliBackGround.setIcon(new javax.swing.ImageIcon("C:\\Users\\Eduardo\\Documents\\GitHub\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\bkgr_img.png")); // NOI18N
+
         getContentPane().add(lbCliBackGround);
         lbCliBackGround.setBounds(0, 0, 1280, 720);
 
@@ -241,7 +284,7 @@ public class telaCadastroCliente extends javax.swing.JFrame {
         } else {
             
                 try { 
-                loginControler cadastro = new loginControler();
+                loginControlerMysql cadastro = new loginControlerMysql();
                 cadastro.casdastroCliente(this);
                 } catch (SQLException sql) {
                 }
@@ -250,8 +293,24 @@ public class telaCadastroCliente extends javax.swing.JFrame {
                 this.setVisible(false);
         }
             
+        String sexoCliente = "";
         
+        if (radCliSexHomem.isSelected()) {
+            sexoCliente += "Homem";
+        }
         
+        if (radCliSexMulher.isSelected()) {
+            sexoCliente += "Homem";
+        }
+        
+        if (radCliSexOutros.isSelected()) {
+            sexoCliente += "Não identificado";
+        }
+     
+        
+        if (sexoCliente.isEmpty()) {
+           JOptionPane.showMessageDialog(null, "Selecione o seu Sexo"); 
+        } 
         
     }//GEN-LAST:event_btCliCadastrarActionPerformed
 
@@ -287,7 +346,20 @@ public class telaCadastroCliente extends javax.swing.JFrame {
         
     }//GEN-LAST:event_btCliBuscaCepActionPerformed
 
+    private void radCliSexMulherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radCliSexMulherActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_radCliSexMulherActionPerformed
+
+    private void ftxtCliTelefoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ftxtCliTelefoneActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ftxtCliTelefoneActionPerformed
+
+    private void radCliSexHomemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radCliSexHomemActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_radCliSexHomemActionPerformed
+
     public ButtonGroup getBtgroupSexo() {
+        
         return btgroupSexo;
     }
 

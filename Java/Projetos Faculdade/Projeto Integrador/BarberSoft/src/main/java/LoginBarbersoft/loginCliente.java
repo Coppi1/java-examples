@@ -1,4 +1,4 @@
-/*
+ /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
@@ -10,20 +10,38 @@ package LoginBarbersoft;
  */
 public class loginCliente {
     
-    String nomeCliente, emailCliente, senhaCliente, cidadeCliente;
+    String nomeCliente, emailCliente, senhaCliente, cidadeCliente, telefoneCliente, sexoCliente;
 
     public loginCliente(String emailCliente, String senhaCliente) {
         this.emailCliente = emailCliente;
         this.senhaCliente = senhaCliente;
     }
     
-    public void cadastrarCliente(String nomeCliente,String emailCliente, String senhaCliente, String cidadeCliente){
+    public void cadastrarCliente(String nomeCliente,String emailCliente, String senhaCliente, String cidadeCliente, String telefoneCliente, String sexoCliente){
         this.emailCliente = emailCliente;
         this.senhaCliente = senhaCliente;
         this.nomeCliente = nomeCliente;
         this.cidadeCliente = cidadeCliente;
+        this.telefoneCliente = telefoneCliente;
+        this.sexoCliente = sexoCliente;
     
 }
+
+    public String getTelefoneCliente() {
+        return telefoneCliente;
+    }
+
+    public void setTelefoneCliente(String telefoneCliente) {
+        this.telefoneCliente = telefoneCliente;
+    }
+
+    public String getSexoCliente() {
+        return sexoCliente;
+    }
+
+    public void setSexoCliente(String sexoCliente) {
+        this.sexoCliente = sexoCliente;
+    }
 
     public String getNomeCliente() {
         return nomeCliente;
