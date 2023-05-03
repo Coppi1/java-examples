@@ -47,6 +47,7 @@ public class telaI1Login extends javax.swing.JFrame {
         btLoginADM = new javax.swing.JButton();
         btRegistro = new javax.swing.JButton();
         btRegistro1 = new javax.swing.JButton();
+        lbCliBackGround = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(199, 161, 135));
@@ -55,11 +56,13 @@ public class telaI1Login extends javax.swing.JFrame {
         getContentPane().setLayout(null);
 
         lbLogin.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
+        lbLogin.setForeground(new java.awt.Color(0, 0, 0));
         lbLogin.setText("Email:");
         getContentPane().add(lbLogin);
         lbLogin.setBounds(50, 130, 110, 40);
 
         lbCadastro.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
+        lbCadastro.setForeground(new java.awt.Color(0, 0, 0));
         lbCadastro.setText("Senha:");
         getContentPane().add(lbCadastro);
         lbCadastro.setBounds(40, 190, 120, 40);
@@ -117,6 +120,10 @@ public class telaI1Login extends javax.swing.JFrame {
         getContentPane().add(btRegistro1);
         btRegistro1.setBounds(120, 430, 210, 60);
 
+        lbCliBackGround.setIcon(new javax.swing.ImageIcon("C:\\Users\\educo\\OneDrive\\Área de Trabalho\\Projects Note\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\bkgr_img.png")); // NOI18N
+        getContentPane().add(lbCliBackGround);
+        lbCliBackGround.setBounds(0, 0, 1280, 720);
+
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
@@ -171,12 +178,12 @@ public class telaI1Login extends javax.swing.JFrame {
     }//GEN-LAST:event_btLoginCLIActionPerformed
 
     private void btRegistro1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btRegistro1ActionPerformed
-        telaCadastroCliente telaDeCadastroCliente = new  telaCadastroCliente();
+        telaCadastroCliente telaDeCadastroCliente = new telaCadastroCliente();
         telaDeCadastroCliente.setVisible(true);
     }//GEN-LAST:event_btRegistro1ActionPerformed
 
     private void btRegistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btRegistroActionPerformed
-        telaCadastroBarbearia telaDeCadastroBarber = new  telaCadastroBarbearia();
+        telaCadastroBarbearia telaDeCadastroBarber = new telaCadastroBarbearia();
         telaDeCadastroBarber.setVisible(true);
     }//GEN-LAST:event_btRegistroActionPerformed
 
@@ -244,6 +251,7 @@ public class telaI1Login extends javax.swing.JFrame {
     public javax.swing.JButton btRegistro;
     public javax.swing.JButton btRegistro1;
     public javax.swing.JLabel lbCadastro;
+    public javax.swing.JLabel lbCliBackGround;
     public javax.swing.JLabel lbLogin;
     public javax.swing.JPasswordField pwSenhaLogin;
     public javax.swing.JTextField txtEmailLogin;

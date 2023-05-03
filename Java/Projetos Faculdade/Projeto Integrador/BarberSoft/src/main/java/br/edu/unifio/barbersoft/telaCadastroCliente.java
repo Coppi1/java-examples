@@ -70,7 +70,7 @@ public class telaCadastroCliente extends javax.swing.JFrame {
         btCliClancel = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        lbCliBackGround = new javax.swing.JLabel();
+        lbCliBackGround1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1280, 720));
@@ -78,41 +78,49 @@ public class telaCadastroCliente extends javax.swing.JFrame {
         getContentPane().setLayout(null);
 
         lbCliNomeCompleto.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
+        lbCliNomeCompleto.setForeground(new java.awt.Color(0, 0, 0));
         lbCliNomeCompleto.setText("Nome Completo:");
         getContentPane().add(lbCliNomeCompleto);
-        lbCliNomeCompleto.setBounds(10, 150, 180, 30);
+        lbCliNomeCompleto.setBounds(10, 150, 160, 30);
 
         lbCliSexo.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
+        lbCliSexo.setForeground(new java.awt.Color(0, 0, 0));
         lbCliSexo.setText("Sexo:");
         getContentPane().add(lbCliSexo);
-        lbCliSexo.setBounds(130, 180, 60, 40);
+        lbCliSexo.setBounds(120, 180, 60, 40);
 
         lbCliCep.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
+        lbCliCep.setForeground(new java.awt.Color(0, 0, 0));
         lbCliCep.setText("CEP:");
         getContentPane().add(lbCliCep);
-        lbCliCep.setBounds(130, 230, 69, 30);
+        lbCliCep.setBounds(120, 230, 69, 30);
 
         lbCliCidade.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
+        lbCliCidade.setForeground(new java.awt.Color(0, 0, 0));
         lbCliCidade.setText("Cidade:");
         getContentPane().add(lbCliCidade);
         lbCliCidade.setBounds(100, 260, 90, 50);
 
         lbCliEmail.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
+        lbCliEmail.setForeground(new java.awt.Color(0, 0, 0));
         lbCliEmail.setText("E-mail:");
         getContentPane().add(lbCliEmail);
-        lbCliEmail.setBounds(110, 300, 80, 50);
+        lbCliEmail.setBounds(100, 300, 80, 50);
 
         lbCliTelefone.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
+        lbCliTelefone.setForeground(new java.awt.Color(0, 0, 0));
         lbCliTelefone.setText("Telefone:");
         getContentPane().add(lbCliTelefone);
-        lbCliTelefone.setBounds(90, 340, 110, 50);
+        lbCliTelefone.setBounds(80, 340, 110, 50);
 
         lbCliSenha.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
+        lbCliSenha.setForeground(new java.awt.Color(0, 0, 0));
         lbCliSenha.setText("Senha:");
         getContentPane().add(lbCliSenha);
-        lbCliSenha.setBounds(110, 390, 90, 40);
+        lbCliSenha.setBounds(100, 390, 90, 40);
 
         lbCliRepeditSenha.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
+        lbCliRepeditSenha.setForeground(new java.awt.Color(0, 0, 0));
         lbCliRepeditSenha.setText("Repetir Senha:");
         getContentPane().add(lbCliRepeditSenha);
         lbCliRepeditSenha.setBounds(30, 430, 180, 40);
@@ -141,21 +149,13 @@ public class telaCadastroCliente extends javax.swing.JFrame {
             }
         });
         getContentPane().add(radCliSexMulher);
-
-        radCliSexMulher.setBounds(370, 180, 100, 30);
-
-       
-
+        radCliSexMulher.setBounds(320, 190, 100, 30);
 
         btgroupSexo.add(radCliSexOutros);
         radCliSexOutros.setFont(new java.awt.Font("Perpetua", 0, 18)); // NOI18N
         radCliSexOutros.setText("Outros");
         getContentPane().add(radCliSexOutros);
-
-        radCliSexOutros.setBounds(480, 180, 100, 30);
-
-        radCliSexOutros.setBounds(410, 190, 100, 30);
-
+        radCliSexOutros.setBounds(430, 190, 100, 30);
 
         try {
             ftxtCliCEP.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("########")));
@@ -174,10 +174,7 @@ public class telaCadastroCliente extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btCliBuscaCep);
-
-        
-        btCliBuscaCep.setBounds(590, 230, 161, 30);
-
+        btCliBuscaCep.setBounds(590, 230, 170, 30);
 
         txtCliCidade.setEditable(false);
         txtCliCidade.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
@@ -239,35 +236,19 @@ public class telaCadastroCliente extends javax.swing.JFrame {
         getContentPane().add(btCliClancel);
         btCliClancel.setBounds(450, 490, 190, 60);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Eduardo\\Documents\\GitHub\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\icon30.png")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\educo\\OneDrive\\Área de Trabalho\\Projects Note\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\icon30.png")); // NOI18N
         jLabel2.setText("jLabel2");
         getContentPane().add(jLabel2);
+        jLabel2.setBounds(960, 30, 280, 240);
 
-    
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BarberIMG/cad_cli75.png"))); // NOI18N
-        jLabel1.setText("jLabel1");
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(30, 20, 880, 80);
-         Updated upstream
-        jLabel2.setBounds(950, 90, 270, 190);
-
-        lbCliBackGround.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BarberIMG/bkgr_img.png"))); // NOI18N
-        lbCliBackGround.setMaximumSize(new java.awt.Dimension(1280, 720));
-        lbCliBackGround.setMinimumSize(new java.awt.Dimension(1280, 720));
-        lbCliBackGround.setPreferredSize(new java.awt.Dimension(1280, 720));
-
-        jLabel2.setBounds(960, 40, 270, 190);
-
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Eduardo\\Documents\\GitHub\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\cad_cli75.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\educo\\OneDrive\\Área de Trabalho\\Projects Note\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\cad_cli75.png")); // NOI18N
         jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(30, 20, 880, 80);
 
-        lbCliBackGround.setIcon(new javax.swing.ImageIcon("C:\\Users\\Eduardo\\Documents\\GitHub\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\bkgr_img.png")); // NOI18N
-
-        getContentPane().add(lbCliBackGround);
-        lbCliBackGround.setBounds(0, 0, 1280, 720);
+        lbCliBackGround1.setIcon(new javax.swing.ImageIcon("C:\\Users\\educo\\OneDrive\\Área de Trabalho\\Projects Note\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\bkgr_img.png")); // NOI18N
+        getContentPane().add(lbCliBackGround1);
+        lbCliBackGround1.setBounds(0, 0, 1280, 720);
 
         pack();
         setLocationRelativeTo(null);
@@ -455,7 +436,7 @@ public class telaCadastroCliente extends javax.swing.JFrame {
     private javax.swing.JFormattedTextField ftxtCliTelefone;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel lbCliBackGround;
+    private javax.swing.JLabel lbCliBackGround1;
     private javax.swing.JLabel lbCliCep;
     private javax.swing.JLabel lbCliCidade;
     private javax.swing.JLabel lbCliEmail;
