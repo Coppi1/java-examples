@@ -20,10 +20,10 @@ import java.sql.SQLException;
  */
 public class loginControlerMysql {
     
-    public void casdastroCliente(telaCadastroCliente view) throws SQLException{
+    public void casdastroClientesql(telaCadastroCliente view) throws SQLException{
         Connection conexao = new  conexaomysql().getConnection();
         loginDAOmysql cadastro = new loginDAOmysql();
-        cadastro.cadastrarCliente(view.getTxtCliNome().getText(), view.getTxtCliEmail().getText(), view.getPwCliSenha().getText(), view.getTxtCliCidade().getText(), 
+        cadastro.cadastrarClientesql(view.getTxtCliNome().getText(), view.getTxtCliEmail().getText(), view.getPwCliSenha().getText(), view.getTxtCliCidade().getText(), 
                 view.getFtxtCliTelefone().getText(), view.getBtgroupSexo().getSelection().getActionCommand());
        
     }

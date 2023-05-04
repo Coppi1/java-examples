@@ -19,13 +19,13 @@ public class loginDAOmysql {
 
     
     
-    public void cadastrarCliente(String nomeCliente, String emailCliente, String senhaCliente, String cidadeCliente, String telefoneCliente, String sexoCliente) {
+    public void cadastrarClientesql(String nomeCliente, String emailCliente, String senhaCliente, String cidadeCliente, String telefoneCliente, String sexoCliente) {
         try {
             Connection conexaomysql = new conexao().getConnection();
             String mysql = "insert into cliente (CLI_NOME, CLI_EMAIL, CLI_SENHA, CLI_CIDADE, CLI_TELEFONE, CLI_SEXO) VALUES ('" + nomeCliente + "', '" + emailCliente + "', '" + senhaCliente + "', '" + cidadeCliente + 
                     "', '" + telefoneCliente + "')";
-            PreparedStatement statment = conexaomysql.prepareStatement(mysql);
-            statment.execute();
+            PreparedStatement statmentsql = conexaomysql.prepareStatement(mysql);
+            statmentsql.execute();
             conexaomysql.close();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -37,8 +37,8 @@ public class loginDAOmysql {
         try {
             Connection conexao = new conexao().getConnection();
             String sql = "insert into adm (nomeadm, emailadm, senhaadm, cidadeadm) values ('" + nomeAdm + "', '" + emailAdm + "', '" + senhaAdm + "', '" + cidadeAdm + "')";
-            PreparedStatement statment = conexao.prepareStatement(sql);
-            statment.execute();
+            PreparedStatement statmentsql = conexao.prepareStatement(sql);
+            statmentsql.execute();
             conexao.close();
         } catch (SQLException e) {
             e.printStackTrace();

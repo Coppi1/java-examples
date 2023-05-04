@@ -266,7 +266,7 @@ public class telaCadastroCliente extends javax.swing.JFrame {
             
                 try { 
                 loginControlerMysql cadastro = new loginControlerMysql();
-                cadastro.casdastroCliente(this);
+                cadastro.casdastroClientesql(this);
                 } catch (SQLException sql) {
                 }
                 

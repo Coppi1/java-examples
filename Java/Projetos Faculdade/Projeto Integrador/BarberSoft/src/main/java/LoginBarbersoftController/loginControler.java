@@ -6,6 +6,7 @@ package LoginBarbersoftController;
 
 import LoginBarbersoftDAO.conexao;
 import LoginBarbersoftDAO.loginDAO;
+import LoginBarbersoftDAO.loginDAOmysql;
 import br.edu.unifio.barbersoft.telaCadastroBarbearia;
 import br.edu.unifio.barbersoft.telaCadastroCliente;
 import br.edu.unifio.barbersoft.telaI1Login;
@@ -20,8 +21,11 @@ public class loginControler {
     
     public void casdastroCliente(telaCadastroCliente view) throws SQLException{
         Connection conexao = new  conexao().getConnection();
-        loginDAO cadastro = new loginDAO();
-        cadastro.cadastrarCliente(view.getTxtCliNome().getText(), view.getTxtCliEmail().getText(), view.getPwCliSenha().getText(), view.getTxtCliCidade().getText());
+        loginDAO cadastro1 = new loginDAO();
+        String a;
+     //   cadastro1.cadastrarCliente(view.getTxtCliNome().getText(), view.getTxtCliEmail().getText(), view.getPwCliSenha().getText(), 
+            //    view.getTxtCliCidade().getText(), view.getFtxtCliTelefone().getText(), "a");
+        cadastro1.cadastrarCliente(view.getTxtCliNome().getText(), view.getTxtCliEmail().getText(), view.getPwCliSenha().getText(), view.getTxtCliCidade().getText());
        
     }
     

@@ -20,7 +20,7 @@ public class conexaomysql {
             
             
             try {
-                Connection conexaomysql = DriverManager.getConnection("jdbc:mysql://localhost:3306/localhost", "root", "1234");
+                Connection conexaomysql = DriverManager.getConnection("jdbc:mysql://localhost:3306/barbersoft", "root", "1234");
                 return conexaomysql;
             } catch (SQLException ex) {
                System.out.println("Drive BD não localizado");              
