@@ -23,7 +23,7 @@ public class loginDAOmysql {
         try {
             Connection conexaomysql = new conexao().getConnection();
             String mysql = "insert into cliente (CLI_NOME, CLI_EMAIL, CLI_SENHA, CLI_CIDADE, CLI_TELEFONE, CLI_SEXO) VALUES ('" + nomeCliente + "', '" + emailCliente + "', '" + senhaCliente + "', '" + cidadeCliente + 
-                    "', '" + telefoneCliente + "')";
+                    "', '" + telefoneCliente + "', '"+"teste"+"')";
             PreparedStatement statmentsql = conexaomysql.prepareStatement(mysql);
             statmentsql.execute();
             conexaomysql.close();

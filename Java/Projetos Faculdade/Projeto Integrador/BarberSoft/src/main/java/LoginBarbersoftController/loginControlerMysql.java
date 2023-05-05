@@ -24,7 +24,7 @@ public class loginControlerMysql {
         Connection conexao = new  conexaomysql().getConnection();
         loginDAOmysql cadastro = new loginDAOmysql();
         cadastro.cadastrarClientesql(view.getTxtCliNome().getText(), view.getTxtCliEmail().getText(), view.getPwCliSenha().getText(), view.getTxtCliCidade().getText(), 
-                view.getFtxtCliTelefone().getText(), view.getBtgroupSexo().getSelection().getActionCommand());
+                view.getFtxtCliTelefone().getText(), "teste");
        
     }
     

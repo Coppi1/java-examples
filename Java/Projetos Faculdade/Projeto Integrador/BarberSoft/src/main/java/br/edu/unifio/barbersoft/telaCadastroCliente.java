@@ -268,6 +268,7 @@ public class telaCadastroCliente extends javax.swing.JFrame {
                 loginControlerMysql cadastro = new loginControlerMysql();
                 cadastro.casdastroClientesql(this);
                 } catch (SQLException sql) {
+                    JOptionPane.showMessageDialog(null, "Erro ao acessar banco");
                 }
                 
                 JOptionPane.showMessageDialog(null, "Cadastro realizado com sucesso!");
