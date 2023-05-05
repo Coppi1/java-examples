@@ -77,41 +77,49 @@ public class telaCadastroCliente extends javax.swing.JFrame {
         getContentPane().setLayout(null);
 
         lbCliNomeCompleto.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
+        lbCliNomeCompleto.setForeground(new java.awt.Color(0, 0, 0));
         lbCliNomeCompleto.setText("Nome Completo:");
         getContentPane().add(lbCliNomeCompleto);
-        lbCliNomeCompleto.setBounds(10, 150, 180, 30);
+        lbCliNomeCompleto.setBounds(10, 150, 155, 30);
 
         lbCliSexo.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
+        lbCliSexo.setForeground(new java.awt.Color(0, 0, 0));
         lbCliSexo.setText("Sexo:");
         getContentPane().add(lbCliSexo);
         lbCliSexo.setBounds(130, 180, 60, 40);
 
         lbCliCep.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
+        lbCliCep.setForeground(new java.awt.Color(0, 0, 0));
         lbCliCep.setText("CEP:");
         getContentPane().add(lbCliCep);
         lbCliCep.setBounds(130, 230, 69, 30);
 
         lbCliCidade.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
+        lbCliCidade.setForeground(new java.awt.Color(0, 0, 0));
         lbCliCidade.setText("Cidade:");
         getContentPane().add(lbCliCidade);
         lbCliCidade.setBounds(100, 260, 90, 50);
 
         lbCliEmail.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
+        lbCliEmail.setForeground(new java.awt.Color(0, 0, 0));
         lbCliEmail.setText("E-mail:");
         getContentPane().add(lbCliEmail);
         lbCliEmail.setBounds(110, 300, 80, 50);
 
         lbCliTelefone.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
+        lbCliTelefone.setForeground(new java.awt.Color(0, 0, 0));
         lbCliTelefone.setText("Telefone:");
         getContentPane().add(lbCliTelefone);
         lbCliTelefone.setBounds(90, 340, 110, 50);
 
         lbCliSenha.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
+        lbCliSenha.setForeground(new java.awt.Color(0, 0, 0));
         lbCliSenha.setText("Senha:");
         getContentPane().add(lbCliSenha);
         lbCliSenha.setBounds(110, 390, 90, 40);
 
         lbCliRepeditSenha.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
+        lbCliRepeditSenha.setForeground(new java.awt.Color(0, 0, 0));
         lbCliRepeditSenha.setText("Repetir Senha:");
         getContentPane().add(lbCliRepeditSenha);
         lbCliRepeditSenha.setBounds(30, 430, 180, 40);
@@ -212,17 +220,18 @@ public class telaCadastroCliente extends javax.swing.JFrame {
         getContentPane().add(btCliClancel);
         btCliClancel.setBounds(450, 490, 190, 60);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BarberIMG/icon30.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\educo\\OneDrive\\Área de Trabalho\\Projects Note\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\icon30.png")); // NOI18N
         jLabel2.setText("jLabel2");
         getContentPane().add(jLabel2);
         jLabel2.setBounds(960, 40, 270, 190);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BarberIMG/cad_cli75.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\educo\\OneDrive\\Área de Trabalho\\Projects Note\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\cad_cli75.png")); // NOI18N
         jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(30, 20, 880, 80);
 
-        lbCliBackGround.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BarberIMG/bkgr_img.png"))); // NOI18N
+        lbCliBackGround.setForeground(new java.awt.Color(0, 0, 0));
+        lbCliBackGround.setIcon(new javax.swing.ImageIcon("C:\\Users\\educo\\OneDrive\\Área de Trabalho\\Projects Note\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\bkgr_img.png")); // NOI18N
         getContentPane().add(lbCliBackGround);
         lbCliBackGround.setBounds(0, 0, 1280, 720);
 
