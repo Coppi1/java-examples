@@ -229,7 +229,7 @@ public class telaCadastroCliente extends javax.swing.JFrame {
         jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Eduardo\\Documents\\GitHub\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\icon30.png")); // NOI18N
         jLabel2.setText("jLabel2");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(960, 30, 270, 190);
+        jLabel2.setBounds(950, 100, 270, 190);
 
         jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Eduardo\\Documents\\GitHub\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\design_inferior-removebg-preview.png")); // NOI18N
         jLabel4.setText("jLabel4");
