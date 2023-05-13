@@ -69,36 +69,43 @@ public class telaCadastroBarbearia extends javax.swing.JFrame {
         getContentPane().setLayout(null);
 
         lbNomeFanstasia.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
+        lbNomeFanstasia.setForeground(new java.awt.Color(0, 0, 0));
         lbNomeFanstasia.setText("Nome da Barbearia: ");
         getContentPane().add(lbNomeFanstasia);
         lbNomeFanstasia.setBounds(50, 100, 230, 30);
 
         lbCnpj.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
+        lbCnpj.setForeground(new java.awt.Color(0, 0, 0));
         lbCnpj.setText("CNPJ:");
         getContentPane().add(lbCnpj);
         lbCnpj.setBounds(200, 140, 80, 30);
 
         lbAdmTelefone.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
+        lbAdmTelefone.setForeground(new java.awt.Color(0, 0, 0));
         lbAdmTelefone.setText("Telefone:");
         getContentPane().add(lbAdmTelefone);
         lbAdmTelefone.setBounds(170, 180, 110, 30);
 
         lbAdmEmail.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
+        lbAdmEmail.setForeground(new java.awt.Color(0, 0, 0));
         lbAdmEmail.setText("E-mail:");
         getContentPane().add(lbAdmEmail);
         lbAdmEmail.setBounds(190, 220, 80, 30);
 
         lbAdmSenha.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
+        lbAdmSenha.setForeground(new java.awt.Color(0, 0, 0));
         lbAdmSenha.setText("Senha:");
         getContentPane().add(lbAdmSenha);
         lbAdmSenha.setBounds(190, 260, 80, 30);
 
         lbAdmRepSenha.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
+        lbAdmRepSenha.setForeground(new java.awt.Color(0, 0, 0));
         lbAdmRepSenha.setText("Repetir Senha:");
         getContentPane().add(lbAdmRepSenha);
         lbAdmRepSenha.setBounds(110, 300, 170, 30);
 
         lbAdmNomeRepres.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
+        lbAdmNomeRepres.setForeground(new java.awt.Color(0, 0, 0));
         lbAdmNomeRepres.setText("Representante:");
         getContentPane().add(lbAdmNomeRepres);
         lbAdmNomeRepres.setBounds(105, 340, 170, 30);
@@ -157,11 +164,13 @@ public class telaCadastroBarbearia extends javax.swing.JFrame {
         txtAdmRepres.setBounds(280, 340, 520, 30);
 
         lbAdmCep.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
+        lbAdmCep.setForeground(new java.awt.Color(0, 0, 0));
         lbAdmCep.setText("CEP:");
         getContentPane().add(lbAdmCep);
         lbAdmCep.setBounds(210, 380, 56, 30);
 
         lbAdmCidade.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
+        lbAdmCidade.setForeground(new java.awt.Color(0, 0, 0));
         lbAdmCidade.setText("Cidade:");
         getContentPane().add(lbAdmCidade);
         lbAdmCidade.setBounds(180, 420, 100, 30);
@@ -212,14 +221,15 @@ public class telaCadastroBarbearia extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btAdmCancel);
-        btAdmCancel.setBounds(600, 480, 190, 60);
+        btAdmCancel.setBounds(540, 480, 190, 60);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BarberIMG/icon30.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Eduardo\\Documents\\GitHub\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\icon30.png")); // NOI18N
         jLabel2.setText("jLabel2");
         getContentPane().add(jLabel2);
         jLabel2.setBounds(960, 30, 270, 190);
 
-        lbCliBackGround.setIcon(new javax.swing.ImageIcon(getClass().getResource("/BarberIMG/bkgr_img.png"))); // NOI18N
+        lbCliBackGround.setForeground(new java.awt.Color(0, 0, 0));
+        lbCliBackGround.setIcon(new javax.swing.ImageIcon("C:\\Users\\Eduardo\\Documents\\GitHub\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\bkgr_img.png")); // NOI18N
         getContentPane().add(lbCliBackGround);
         lbCliBackGround.setBounds(0, 0, 1280, 720);
 

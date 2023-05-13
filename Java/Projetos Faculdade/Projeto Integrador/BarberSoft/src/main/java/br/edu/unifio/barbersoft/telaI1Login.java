@@ -47,6 +47,11 @@ public class telaI1Login extends javax.swing.JFrame {
         btLoginADM = new javax.swing.JButton();
         btRegistro = new javax.swing.JButton();
         btRegistro1 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        lbCliBackGround = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(199, 161, 135));
@@ -55,18 +60,20 @@ public class telaI1Login extends javax.swing.JFrame {
         getContentPane().setLayout(null);
 
         lbLogin.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
+        lbLogin.setForeground(new java.awt.Color(0, 0, 0));
         lbLogin.setText("Email:");
         getContentPane().add(lbLogin);
-        lbLogin.setBounds(50, 130, 110, 40);
+        lbLogin.setBounds(50, 140, 70, 40);
 
         lbCadastro.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
+        lbCadastro.setForeground(new java.awt.Color(0, 0, 0));
         lbCadastro.setText("Senha:");
         getContentPane().add(lbCadastro);
-        lbCadastro.setBounds(40, 190, 120, 40);
+        lbCadastro.setBounds(40, 200, 80, 40);
 
         txtEmailLogin.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         getContentPane().add(txtEmailLogin);
-        txtEmailLogin.setBounds(120, 130, 520, 40);
+        txtEmailLogin.setBounds(130, 140, 520, 40);
 
         pwSenhaLogin.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         pwSenhaLogin.addActionListener(new java.awt.event.ActionListener() {
@@ -75,7 +82,7 @@ public class telaI1Login extends javax.swing.JFrame {
             }
         });
         getContentPane().add(pwSenhaLogin);
-        pwSenhaLogin.setBounds(120, 190, 520, 40);
+        pwSenhaLogin.setBounds(130, 200, 520, 40);
 
         btLoginCLI.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         btLoginCLI.setText("Login Cliente");
@@ -85,7 +92,7 @@ public class telaI1Login extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btLoginCLI);
-        btLoginCLI.setBounds(120, 250, 190, 60);
+        btLoginCLI.setBounds(130, 260, 190, 60);
 
         btLoginADM.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         btLoginADM.setText("Login Barbearia");
@@ -95,7 +102,7 @@ public class telaI1Login extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btLoginADM);
-        btLoginADM.setBounds(350, 250, 200, 60);
+        btLoginADM.setBounds(350, 260, 200, 60);
 
         btRegistro.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         btRegistro.setText("Cadastro Barbearia");
@@ -105,7 +112,7 @@ public class telaI1Login extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btRegistro);
-        btRegistro.setBounds(370, 430, 240, 60);
+        btRegistro.setBounds(340, 430, 240, 60);
 
         btRegistro1.setFont(new java.awt.Font("Perpetua", 0, 24)); // NOI18N
         btRegistro1.setText("Cadastro Cliente");
@@ -115,7 +122,30 @@ public class telaI1Login extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btRegistro1);
-        btRegistro1.setBounds(120, 430, 210, 60);
+        btRegistro1.setBounds(110, 430, 210, 60);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Eduardo\\Documents\\GitHub\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\login_entre75.png")); // NOI18N
+        jLabel2.setText("jLabel2");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(90, 0, 620, 110);
+
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Eduardo\\Documents\\GitHub\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\icon50.png")); // NOI18N
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(790, 10, 450, 340);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Eduardo\\Documents\\GitHub\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\login_primeiravez60.png")); // NOI18N
+        jLabel1.setText("jLabel1");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(110, 360, 790, 60);
+
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Eduardo\\Documents\\GitHub\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\design_inferior-removebg-preview.png")); // NOI18N
+        jLabel4.setText("jLabel4");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(300, 510, 700, 220);
+
+        lbCliBackGround.setIcon(new javax.swing.ImageIcon("C:\\Users\\Eduardo\\Documents\\GitHub\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\bkgr_img.png")); // NOI18N
+        getContentPane().add(lbCliBackGround);
+        lbCliBackGround.setBounds(0, 0, 1280, 720);
 
         pack();
         setLocationRelativeTo(null);
@@ -243,7 +273,12 @@ public class telaI1Login extends javax.swing.JFrame {
     public javax.swing.JButton btLoginCLI;
     public javax.swing.JButton btRegistro;
     public javax.swing.JButton btRegistro1;
+    public javax.swing.JLabel jLabel1;
+    public javax.swing.JLabel jLabel2;
+    public javax.swing.JLabel jLabel3;
+    public javax.swing.JLabel jLabel4;
     public javax.swing.JLabel lbCadastro;
+    public javax.swing.JLabel lbCliBackGround;
     public javax.swing.JLabel lbLogin;
     public javax.swing.JPasswordField pwSenhaLogin;
     public javax.swing.JTextField txtEmailLogin;
