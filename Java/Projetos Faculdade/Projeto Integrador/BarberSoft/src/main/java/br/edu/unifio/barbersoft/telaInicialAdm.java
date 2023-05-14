@@ -31,22 +31,31 @@ public class telaInicialAdm extends javax.swing.JFrame {
         btnProfissionais = new javax.swing.JButton();
         btnServicos = new javax.swing.JButton();
         btnClientesAdm = new javax.swing.JButton();
-        lbLogo = new javax.swing.JLabel();
-        lbTextoAgend = new javax.swing.JLabel();
-        lbTextoMeusA = new javax.swing.JLabel();
-        lbTextoMeusAgen = new javax.swing.JLabel();
-        lbTextoBarb = new javax.swing.JLabel();
-        lbTextoBarbe = new javax.swing.JLabel();
-        lbTextoOpcao = new javax.swing.JLabel();
-        lbTextoOpcaoDe = new javax.swing.JLabel();
-        lbTextoSuporte = new javax.swing.JLabel();
-        lbTextoSupor = new javax.swing.JLabel();
-        lbFundo = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        lbAdmTelefone1 = new javax.swing.JLabel();
+        lbAdmTelefone2 = new javax.swing.JLabel();
+        lbAdmTelefone3 = new javax.swing.JLabel();
+        lbAdmTelefone4 = new javax.swing.JLabel();
+        lbAdmTelefone5 = new javax.swing.JLabel();
+        lbAdmTelefone6 = new javax.swing.JLabel();
+        lbAdmTelefone7 = new javax.swing.JLabel();
+        lbAdmTelefone8 = new javax.swing.JLabel();
+        lbAdmTelefone9 = new javax.swing.JLabel();
+        lbAdmTelefone10 = new javax.swing.JLabel();
+        lbCliBackGround = new javax.swing.JLabel();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu2 = new javax.swing.JMenu();
+        jMenu1 = new javax.swing.JMenu();
+        jMenu3 = new javax.swing.JMenu();
+        jMenu4 = new javax.swing.JMenu();
+        jMenu5 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(1280, 720));
+        setSize(new java.awt.Dimension(1280, 720));
         getContentPane().setLayout(null);
 
-        btnAgendamento.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        btnAgendamento.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnAgendamento.setForeground(new java.awt.Color(0, 0, 0));
         btnAgendamento.setText("BARBEARIAS");
         btnAgendamento.addActionListener(new java.awt.event.ActionListener() {
@@ -55,9 +64,9 @@ public class telaInicialAdm extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnAgendamento);
-        btnAgendamento.setBounds(20, 290, 170, 75);
+        btnAgendamento.setBounds(50, 470, 330, 140);
 
-        btnConfHorario.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        btnConfHorario.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnConfHorario.setForeground(new java.awt.Color(0, 0, 0));
         btnConfHorario.setText("MEUS AGENDAMENTOS");
         btnConfHorario.addActionListener(new java.awt.event.ActionListener() {
@@ -66,9 +75,9 @@ public class telaInicialAdm extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnConfHorario);
-        btnConfHorario.setBounds(230, 70, 170, 75);
+        btnConfHorario.setBounds(450, 160, 330, 140);
 
-        btnProfissionais.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        btnProfissionais.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnProfissionais.setForeground(new java.awt.Color(0, 0, 0));
         btnProfissionais.setText("AGENDAR SERVIÇO");
         btnProfissionais.addActionListener(new java.awt.event.ActionListener() {
@@ -77,9 +86,9 @@ public class telaInicialAdm extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnProfissionais);
-        btnProfissionais.setBounds(20, 70, 170, 75);
+        btnProfissionais.setBounds(50, 160, 330, 140);
 
-        btnServicos.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        btnServicos.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnServicos.setForeground(new java.awt.Color(0, 0, 0));
         btnServicos.setText("OPÇÃO DE PERFIL");
         btnServicos.addActionListener(new java.awt.event.ActionListener() {
@@ -88,9 +97,9 @@ public class telaInicialAdm extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnServicos);
-        btnServicos.setBounds(220, 290, 170, 75);
+        btnServicos.setBounds(450, 470, 330, 140);
 
-        btnClientesAdm.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        btnClientesAdm.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnClientesAdm.setForeground(new java.awt.Color(0, 0, 0));
         btnClientesAdm.setText("SUPORTE");
         btnClientesAdm.addActionListener(new java.awt.event.ActionListener() {
@@ -99,74 +108,97 @@ public class telaInicialAdm extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnClientesAdm);
-        btnClientesAdm.setBounds(480, 290, 170, 75);
+        btnClientesAdm.setBounds(850, 470, 330, 140);
 
-        lbLogo.setIcon(new javax.swing.ImageIcon("C:\\Users\\Rafael\\Documents\\GitHub\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\icon30.png")); // NOI18N
-        lbLogo.setText("jLabel1");
-        getContentPane().add(lbLogo);
-        lbLogo.setBounds(420, 0, 290, 260);
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Eduardo\\Documents\\GitHub\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\icon50.png")); // NOI18N
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(810, 80, 450, 340);
 
-        lbTextoAgend.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        lbTextoAgend.setForeground(new java.awt.Color(0, 0, 0));
-        lbTextoAgend.setText("Realize seu agendamento!");
-        getContentPane().add(lbTextoAgend);
-        lbTextoAgend.setBounds(30, 150, 150, 15);
+        lbAdmTelefone1.setFont(new java.awt.Font("Perpetua", 0, 18)); // NOI18N
+        lbAdmTelefone1.setForeground(new java.awt.Color(0, 0, 0));
+        lbAdmTelefone1.setText(" disponiveis por cidade.");
+        getContentPane().add(lbAdmTelefone1);
+        lbAdmTelefone1.setBounds(120, 630, 200, 30);
 
-        lbTextoMeusA.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        lbTextoMeusA.setForeground(new java.awt.Color(0, 0, 0));
-        lbTextoMeusA.setText("Visualize agendamentos");
-        getContentPane().add(lbTextoMeusA);
-        lbTextoMeusA.setBounds(250, 150, 160, 15);
+        lbAdmTelefone2.setFont(new java.awt.Font("Perpetua", 0, 18)); // NOI18N
+        lbAdmTelefone2.setForeground(new java.awt.Color(0, 0, 0));
+        lbAdmTelefone2.setText("Visualize agendamentos");
+        getContentPane().add(lbAdmTelefone2);
+        lbAdmTelefone2.setBounds(530, 300, 200, 30);
 
-        lbTextoMeusAgen.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        lbTextoMeusAgen.setForeground(new java.awt.Color(0, 0, 0));
-        lbTextoMeusAgen.setText("realizados.");
-        getContentPane().add(lbTextoMeusAgen);
-        lbTextoMeusAgen.setBounds(280, 170, 70, 15);
+        lbAdmTelefone3.setFont(new java.awt.Font("Perpetua", 0, 18)); // NOI18N
+        lbAdmTelefone3.setForeground(new java.awt.Color(0, 0, 0));
+        lbAdmTelefone3.setText("Realize seu agendamento!");
+        getContentPane().add(lbAdmTelefone3);
+        lbAdmTelefone3.setBounds(110, 300, 240, 30);
 
-        lbTextoBarb.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        lbTextoBarb.setForeground(new java.awt.Color(0, 0, 0));
-        lbTextoBarb.setText("Visualize as Barbearias");
-        getContentPane().add(lbTextoBarb);
-        lbTextoBarb.setBounds(40, 370, 140, 15);
+        lbAdmTelefone4.setFont(new java.awt.Font("Perpetua", 0, 18)); // NOI18N
+        lbAdmTelefone4.setForeground(new java.awt.Color(0, 0, 0));
+        lbAdmTelefone4.setText("dados pessoais");
+        getContentPane().add(lbAdmTelefone4);
+        lbAdmTelefone4.setBounds(560, 630, 150, 20);
 
-        lbTextoBarbe.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        lbTextoBarbe.setForeground(new java.awt.Color(0, 0, 0));
-        lbTextoBarbe.setText("disponiveis por cidade.");
-        getContentPane().add(lbTextoBarbe);
-        lbTextoBarbe.setBounds(40, 385, 140, 15);
+        lbAdmTelefone5.setFont(new java.awt.Font("Perpetua", 0, 18)); // NOI18N
+        lbAdmTelefone5.setForeground(new java.awt.Color(0, 0, 0));
+        lbAdmTelefone5.setText("Visualize as Barbearias");
+        getContentPane().add(lbAdmTelefone5);
+        lbAdmTelefone5.setBounds(120, 610, 200, 30);
 
-        lbTextoOpcao.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        lbTextoOpcao.setForeground(new java.awt.Color(0, 0, 0));
-        lbTextoOpcao.setText("Visualize e altere seus");
-        getContentPane().add(lbTextoOpcao);
-        lbTextoOpcao.setBounds(240, 370, 130, 15);
+        lbAdmTelefone6.setFont(new java.awt.Font("Perpetua", 0, 18)); // NOI18N
+        lbAdmTelefone6.setForeground(new java.awt.Color(0, 0, 0));
+        lbAdmTelefone6.setText("com App.");
+        getContentPane().add(lbAdmTelefone6);
+        lbAdmTelefone6.setBounds(980, 630, 80, 30);
 
-        lbTextoOpcaoDe.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        lbTextoOpcaoDe.setForeground(new java.awt.Color(0, 0, 0));
-        lbTextoOpcaoDe.setText("dados pessoais.");
-        getContentPane().add(lbTextoOpcaoDe);
-        lbTextoOpcaoDe.setBounds(250, 385, 100, 15);
+        lbAdmTelefone7.setFont(new java.awt.Font("Perpetua", 0, 18)); // NOI18N
+        lbAdmTelefone7.setForeground(new java.awt.Color(0, 0, 0));
+        lbAdmTelefone7.setText("Visualize e altere seus");
+        getContentPane().add(lbAdmTelefone7);
+        lbAdmTelefone7.setBounds(530, 610, 200, 20);
 
-        lbTextoSuporte.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        lbTextoSuporte.setForeground(new java.awt.Color(0, 0, 0));
-        lbTextoSuporte.setText("Em caso de problemas");
-        getContentPane().add(lbTextoSuporte);
-        lbTextoSuporte.setBounds(500, 370, 130, 15);
+        lbAdmTelefone8.setFont(new java.awt.Font("Perpetua", 0, 18)); // NOI18N
+        lbAdmTelefone8.setForeground(new java.awt.Color(0, 0, 0));
+        lbAdmTelefone8.setText("Dúvidas e problemas");
+        getContentPane().add(lbAdmTelefone8);
+        lbAdmTelefone8.setBounds(940, 610, 200, 30);
 
-        lbTextoSupor.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        lbTextoSupor.setForeground(new java.awt.Color(0, 0, 0));
-        lbTextoSupor.setText("com App.");
-        getContentPane().add(lbTextoSupor);
-        lbTextoSupor.setBounds(530, 385, 60, 15);
+        lbAdmTelefone9.setFont(new java.awt.Font("Perpetua", 0, 18)); // NOI18N
+        lbAdmTelefone9.setForeground(new java.awt.Color(0, 0, 0));
+        lbAdmTelefone9.setText("realizados.");
+        getContentPane().add(lbAdmTelefone9);
+        lbAdmTelefone9.setBounds(580, 320, 100, 30);
 
-        lbFundo.setIcon(new javax.swing.ImageIcon("C:\\Users\\Rafael\\Documents\\GitHub\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\bkgr_img.png")); // NOI18N
-        lbFundo.setText("jLabel2");
-        lbFundo.setMaximumSize(new java.awt.Dimension(770, 510));
-        lbFundo.setMinimumSize(new java.awt.Dimension(770, 510));
-        lbFundo.setPreferredSize(new java.awt.Dimension(770, 510));
-        getContentPane().add(lbFundo);
-        lbFundo.setBounds(-6, -20, 690, 470);
+        lbAdmTelefone10.setFont(new java.awt.Font("Perpetua", 0, 36)); // NOI18N
+        lbAdmTelefone10.setForeground(new java.awt.Color(0, 0, 0));
+        lbAdmTelefone10.setText("  Seja bem vindo nome_usuario");
+        lbAdmTelefone10.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        getContentPane().add(lbAdmTelefone10);
+        lbAdmTelefone10.setBounds(-10, 20, 1320, 60);
+
+        lbCliBackGround.setForeground(new java.awt.Color(0, 0, 0));
+        lbCliBackGround.setIcon(new javax.swing.ImageIcon("C:\\Users\\Eduardo\\Documents\\GitHub\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\bkgr_img.png")); // NOI18N
+        getContentPane().add(lbCliBackGround);
+        lbCliBackGround.setBounds(0, -40, 1280, 760);
+
+        jMenu2.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+        jMenu2.setText("Opções do APP");
+        jMenu2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+
+        jMenu1.setText("Opções de idioma");
+        jMenu2.add(jMenu1);
+
+        jMenu3.setText("Opções de vizualização");
+        jMenu2.add(jMenu3);
+
+        jMenu4.setText("Sair da conta");
+        jMenu2.add(jMenu4);
+
+        jMenu5.setText("Sair do APP");
+        jMenu2.add(jMenu5);
+
+        jMenuBar1.add(jMenu2);
+
+        setJMenuBar(jMenuBar1);
 
         pack();
         setLocationRelativeTo(null);
@@ -245,16 +277,23 @@ public class telaInicialAdm extends javax.swing.JFrame {
     private javax.swing.JButton btnConfHorario;
     private javax.swing.JButton btnProfissionais;
     private javax.swing.JButton btnServicos;
-    private javax.swing.JLabel lbFundo;
-    private javax.swing.JLabel lbLogo;
-    private javax.swing.JLabel lbTextoAgend;
-    private javax.swing.JLabel lbTextoBarb;
-    private javax.swing.JLabel lbTextoBarbe;
-    private javax.swing.JLabel lbTextoMeusA;
-    private javax.swing.JLabel lbTextoMeusAgen;
-    private javax.swing.JLabel lbTextoOpcao;
-    private javax.swing.JLabel lbTextoOpcaoDe;
-    private javax.swing.JLabel lbTextoSupor;
-    private javax.swing.JLabel lbTextoSuporte;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenu jMenu5;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JLabel lbAdmTelefone1;
+    private javax.swing.JLabel lbAdmTelefone10;
+    private javax.swing.JLabel lbAdmTelefone2;
+    private javax.swing.JLabel lbAdmTelefone3;
+    private javax.swing.JLabel lbAdmTelefone4;
+    private javax.swing.JLabel lbAdmTelefone5;
+    private javax.swing.JLabel lbAdmTelefone6;
+    private javax.swing.JLabel lbAdmTelefone7;
+    private javax.swing.JLabel lbAdmTelefone8;
+    private javax.swing.JLabel lbAdmTelefone9;
+    private javax.swing.JLabel lbCliBackGround;
     // End of variables declaration//GEN-END:variables
 }

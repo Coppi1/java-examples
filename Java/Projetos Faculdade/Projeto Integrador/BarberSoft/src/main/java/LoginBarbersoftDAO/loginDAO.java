@@ -98,8 +98,7 @@ public class loginDAO {
                 System.out.println("Possui");
                 JOptionPane.showMessageDialog(null, "Login efetuado com sucesso!");
                 
-                telaInicialCliente t = new telaInicialCliente();
-                t.setVisible(true);
+                
                                            
         
             } else {

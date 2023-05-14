@@ -139,9 +139,8 @@ public class telaI1Login extends javax.swing.JFrame {
         jLabel1.setBounds(110, 360, 790, 60);
 
         jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Eduardo\\Documents\\GitHub\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\design_inferior-removebg-preview.png")); // NOI18N
-        jLabel4.setText("jLabel4");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(300, 510, 700, 220);
+        jLabel4.setBounds(480, 550, 340, 220);
 
         lbCliBackGround.setIcon(new javax.swing.ImageIcon("C:\\Users\\Eduardo\\Documents\\GitHub\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\bkgr_img.png")); // NOI18N
         getContentPane().add(lbCliBackGround);
@@ -160,6 +159,9 @@ public class telaI1Login extends javax.swing.JFrame {
             try {
                 loginControler LoginAdm = new loginControler();
                 LoginAdm.loginAdm(this);
+                telaInicialAdm telaadm = new telaInicialAdm();
+                telaadm.setVisible(true);
+                this.dispose();
                 
             } catch (SQLException ex) {
                 Logger.getLogger(telaI1Login.class.getName()).log(Level.SEVERE, null, ex);

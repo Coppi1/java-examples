@@ -200,11 +200,10 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="2" name="C:\Users\Eduardo\Documents\GitHub\Faculdade-JAVA\Java\Projetos Faculdade\Projeto Integrador\BarberSoft\src\main\java\BarberIMG\design_inferior-removebg-preview.png"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="jLabel4"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="300" y="510" width="700" height="220"/>
+          <AbsoluteConstraints x="480" y="550" width="340" height="220"/>
         </Constraint>
       </Constraints>
     </Component>

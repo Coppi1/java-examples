@@ -71,6 +71,7 @@ public class telaCadastroCliente extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         lbCliBackGround1 = new javax.swing.JLabel();
+        lbCliBackGround = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1280, 720));
@@ -221,19 +222,23 @@ public class telaCadastroCliente extends javax.swing.JFrame {
         getContentPane().add(btCliClancel);
         btCliClancel.setBounds(460, 450, 190, 60);
 
-        jLabel1.setText("jLabel1");
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Eduardo\\Documents\\GitHub\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\cad_cli75.png")); // NOI18N
         getContentPane().add(jLabel1);
         jLabel1.setBounds(20, 0, 880, 80);
 
-        jLabel2.setText("jLabel2");
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Eduardo\\Documents\\GitHub\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\icon30.png")); // NOI18N
         getContentPane().add(jLabel2);
         jLabel2.setBounds(950, 100, 270, 190);
 
-        jLabel4.setText("jLabel4");
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Eduardo\\Documents\\GitHub\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\img_inf60.png")); // NOI18N
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(300, 510, 700, 220);
+        jLabel4.setBounds(420, 550, 410, 220);
         getContentPane().add(lbCliBackGround1);
         lbCliBackGround1.setBounds(0, 0, 1280, 0);
+
+        lbCliBackGround.setIcon(new javax.swing.ImageIcon("C:\\Users\\Eduardo\\Documents\\GitHub\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\bkgr_img.png")); // NOI18N
+        getContentPane().add(lbCliBackGround);
+        lbCliBackGround.setBounds(0, 0, 1280, 720);
 
         pack();
         setLocationRelativeTo(null);
@@ -393,6 +398,7 @@ public class telaCadastroCliente extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel lbCliBackGround;
     private javax.swing.JLabel lbCliBackGround1;
     private javax.swing.JLabel lbCliCep;
     private javax.swing.JLabel lbCliCidade;
