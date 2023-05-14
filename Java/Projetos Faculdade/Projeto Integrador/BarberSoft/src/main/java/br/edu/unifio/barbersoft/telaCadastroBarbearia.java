@@ -60,6 +60,8 @@ public class telaCadastroBarbearia extends javax.swing.JFrame {
         btAdmCadastrar = new javax.swing.JButton();
         btAdmCancel = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         lbCliBackGround = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -226,7 +228,16 @@ public class telaCadastroBarbearia extends javax.swing.JFrame {
         jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Eduardo\\Documents\\GitHub\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\icon30.png")); // NOI18N
         jLabel2.setText("jLabel2");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(960, 30, 270, 190);
+        jLabel2.setBounds(960, 120, 270, 190);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Eduardo\\Documents\\GitHub\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\cad_barb75.png")); // NOI18N
+        jLabel1.setText("jLabel1");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(20, 0, 970, 80);
+
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\Eduardo\\Documents\\GitHub\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\img_inf60.png")); // NOI18N
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(470, 580, 440, 150);
 
         lbCliBackGround.setForeground(new java.awt.Color(0, 0, 0));
         lbCliBackGround.setIcon(new javax.swing.ImageIcon("C:\\Users\\Eduardo\\Documents\\GitHub\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\bkgr_img.png")); // NOI18N
@@ -403,7 +414,9 @@ public class telaCadastroBarbearia extends javax.swing.JFrame {
     private javax.swing.JFormattedTextField ftxtAdmCEP;
     private javax.swing.JFormattedTextField ftxtAdmCnpj;
     private javax.swing.JFormattedTextField ftxtAdmTelefone;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel lbAdmCep;
     private javax.swing.JLabel lbAdmCidade;
     private javax.swing.JLabel lbAdmEmail;

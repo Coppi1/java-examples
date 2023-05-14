@@ -227,7 +227,7 @@ public class telaCadastroCliente extends javax.swing.JFrame {
 
         jLabel2.setText("jLabel2");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(960, 30, 270, 190);
+        jLabel2.setBounds(950, 100, 270, 190);
 
         jLabel4.setText("jLabel4");
         getContentPane().add(jLabel4);
