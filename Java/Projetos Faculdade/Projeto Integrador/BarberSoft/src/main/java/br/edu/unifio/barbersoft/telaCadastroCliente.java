@@ -221,24 +221,19 @@ public class telaCadastroCliente extends javax.swing.JFrame {
         getContentPane().add(btCliClancel);
         btCliClancel.setBounds(460, 450, 190, 60);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Eduardo\\Documents\\GitHub\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\cad_cli75.png")); // NOI18N
         jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(20, 0, 880, 80);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Eduardo\\Documents\\GitHub\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\icon30.png")); // NOI18N
         jLabel2.setText("jLabel2");
         getContentPane().add(jLabel2);
         jLabel2.setBounds(960, 30, 270, 190);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Eduardo\\Documents\\GitHub\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\design_inferior-removebg-preview.png")); // NOI18N
         jLabel4.setText("jLabel4");
         getContentPane().add(jLabel4);
         jLabel4.setBounds(300, 510, 700, 220);
-
-        lbCliBackGround1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Eduardo\\Documents\\GitHub\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\bkgr_img.png")); // NOI18N
         getContentPane().add(lbCliBackGround1);
-        lbCliBackGround1.setBounds(0, 0, 1280, 720);
+        lbCliBackGround1.setBounds(0, 0, 1280, 0);
 
         pack();
         setLocationRelativeTo(null);

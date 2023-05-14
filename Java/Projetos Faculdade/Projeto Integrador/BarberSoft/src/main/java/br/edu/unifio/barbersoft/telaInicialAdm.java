@@ -31,105 +31,142 @@ public class telaInicialAdm extends javax.swing.JFrame {
         btnProfissionais = new javax.swing.JButton();
         btnServicos = new javax.swing.JButton();
         btnClientesAdm = new javax.swing.JButton();
-        btnOpcoesBarbearia = new javax.swing.JButton();
-        btnSuporteAdm = new javax.swing.JButton();
+        lbLogo = new javax.swing.JLabel();
+        lbTextoAgend = new javax.swing.JLabel();
+        lbTextoMeusA = new javax.swing.JLabel();
+        lbTextoMeusAgen = new javax.swing.JLabel();
+        lbTextoBarb = new javax.swing.JLabel();
+        lbTextoBarbe = new javax.swing.JLabel();
+        lbTextoOpcao = new javax.swing.JLabel();
+        lbTextoOpcaoDe = new javax.swing.JLabel();
+        lbTextoSuporte = new javax.swing.JLabel();
+        lbTextoSupor = new javax.swing.JLabel();
+        lbFundo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
 
-        btnAgendamento.setText("AGENDAMENTO");
+        btnAgendamento.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        btnAgendamento.setForeground(new java.awt.Color(0, 0, 0));
+        btnAgendamento.setText("BARBEARIAS");
         btnAgendamento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAgendamentoActionPerformed(evt);
             }
         });
+        getContentPane().add(btnAgendamento);
+        btnAgendamento.setBounds(20, 290, 170, 75);
 
-        btnConfHorario.setText("CONFIGURAÇÃO DE HORARIO");
+        btnConfHorario.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        btnConfHorario.setForeground(new java.awt.Color(0, 0, 0));
+        btnConfHorario.setText("MEUS AGENDAMENTOS");
         btnConfHorario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnConfHorarioActionPerformed(evt);
             }
         });
+        getContentPane().add(btnConfHorario);
+        btnConfHorario.setBounds(230, 70, 170, 75);
 
-        btnProfissionais.setText("PROFISSIONAIS");
+        btnProfissionais.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        btnProfissionais.setForeground(new java.awt.Color(0, 0, 0));
+        btnProfissionais.setText("AGENDAR SERVIÇO");
         btnProfissionais.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnProfissionaisActionPerformed(evt);
             }
         });
+        getContentPane().add(btnProfissionais);
+        btnProfissionais.setBounds(20, 70, 170, 75);
 
-        btnServicos.setText("SERVIÇOS");
+        btnServicos.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        btnServicos.setForeground(new java.awt.Color(0, 0, 0));
+        btnServicos.setText("OPÇÃO DE PERFIL");
         btnServicos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnServicosActionPerformed(evt);
             }
         });
+        getContentPane().add(btnServicos);
+        btnServicos.setBounds(220, 290, 170, 75);
 
-        btnClientesAdm.setText("CLIENTES");
+        btnClientesAdm.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        btnClientesAdm.setForeground(new java.awt.Color(0, 0, 0));
+        btnClientesAdm.setText("SUPORTE");
         btnClientesAdm.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnClientesAdmActionPerformed(evt);
             }
         });
+        getContentPane().add(btnClientesAdm);
+        btnClientesAdm.setBounds(480, 290, 170, 75);
 
-        btnOpcoesBarbearia.setText("OPÇÕES DA BARBEARIA");
-        btnOpcoesBarbearia.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnOpcoesBarbeariaActionPerformed(evt);
-            }
-        });
+        lbLogo.setIcon(new javax.swing.ImageIcon("C:\\Users\\Rafael\\Documents\\GitHub\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\icon30.png")); // NOI18N
+        lbLogo.setText("jLabel1");
+        getContentPane().add(lbLogo);
+        lbLogo.setBounds(420, 0, 290, 260);
 
-        btnSuporteAdm.setText("SUPORTE");
-        btnSuporteAdm.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSuporteAdmActionPerformed(evt);
-            }
-        });
+        lbTextoAgend.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lbTextoAgend.setForeground(new java.awt.Color(0, 0, 0));
+        lbTextoAgend.setText("Realize seu agendamento!");
+        getContentPane().add(lbTextoAgend);
+        lbTextoAgend.setBounds(30, 150, 150, 15);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnAgendamento, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnProfissionais, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnClientesAdm, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(40, 40, 40)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btnServicos, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btnOpcoesBarbearia, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(39, 39, 39)
-                                .addComponent(btnSuporteAdm, javax.swing.GroupLayout.DEFAULT_SIZE, 829, Short.MAX_VALUE)))
-                        .addContainerGap())
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(50, 50, 50)
-                        .addComponent(btnConfHorario)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(69, 69, 69)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnAgendamento, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnConfHorario, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnProfissionais, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnServicos, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnClientesAdm, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnOpcoesBarbearia, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnSuporteAdm, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(384, Short.MAX_VALUE))
-        );
+        lbTextoMeusA.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lbTextoMeusA.setForeground(new java.awt.Color(0, 0, 0));
+        lbTextoMeusA.setText("Visualize agendamentos");
+        getContentPane().add(lbTextoMeusA);
+        lbTextoMeusA.setBounds(250, 150, 160, 15);
+
+        lbTextoMeusAgen.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lbTextoMeusAgen.setForeground(new java.awt.Color(0, 0, 0));
+        lbTextoMeusAgen.setText("realizados.");
+        getContentPane().add(lbTextoMeusAgen);
+        lbTextoMeusAgen.setBounds(280, 170, 70, 15);
+
+        lbTextoBarb.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lbTextoBarb.setForeground(new java.awt.Color(0, 0, 0));
+        lbTextoBarb.setText("Visualize as Barbearias");
+        getContentPane().add(lbTextoBarb);
+        lbTextoBarb.setBounds(40, 370, 140, 15);
+
+        lbTextoBarbe.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lbTextoBarbe.setForeground(new java.awt.Color(0, 0, 0));
+        lbTextoBarbe.setText("disponiveis por cidade.");
+        getContentPane().add(lbTextoBarbe);
+        lbTextoBarbe.setBounds(40, 385, 140, 15);
+
+        lbTextoOpcao.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lbTextoOpcao.setForeground(new java.awt.Color(0, 0, 0));
+        lbTextoOpcao.setText("Visualize e altere seus");
+        getContentPane().add(lbTextoOpcao);
+        lbTextoOpcao.setBounds(240, 370, 130, 15);
+
+        lbTextoOpcaoDe.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lbTextoOpcaoDe.setForeground(new java.awt.Color(0, 0, 0));
+        lbTextoOpcaoDe.setText("dados pessoais.");
+        getContentPane().add(lbTextoOpcaoDe);
+        lbTextoOpcaoDe.setBounds(250, 385, 100, 15);
+
+        lbTextoSuporte.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lbTextoSuporte.setForeground(new java.awt.Color(0, 0, 0));
+        lbTextoSuporte.setText("Em caso de problemas");
+        getContentPane().add(lbTextoSuporte);
+        lbTextoSuporte.setBounds(500, 370, 130, 15);
+
+        lbTextoSupor.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        lbTextoSupor.setForeground(new java.awt.Color(0, 0, 0));
+        lbTextoSupor.setText("com App.");
+        getContentPane().add(lbTextoSupor);
+        lbTextoSupor.setBounds(530, 385, 60, 15);
+
+        lbFundo.setIcon(new javax.swing.ImageIcon("C:\\Users\\Rafael\\Documents\\GitHub\\Faculdade-JAVA\\Java\\Projetos Faculdade\\Projeto Integrador\\BarberSoft\\src\\main\\java\\BarberIMG\\bkgr_img.png")); // NOI18N
+        lbFundo.setText("jLabel2");
+        lbFundo.setMaximumSize(new java.awt.Dimension(770, 510));
+        lbFundo.setMinimumSize(new java.awt.Dimension(770, 510));
+        lbFundo.setPreferredSize(new java.awt.Dimension(770, 510));
+        getContentPane().add(lbFundo);
+        lbFundo.setBounds(-6, -20, 690, 470);
 
         pack();
         setLocationRelativeTo(null);
@@ -162,22 +199,10 @@ public class telaInicialAdm extends javax.swing.JFrame {
     }//GEN-LAST:event_btnServicosActionPerformed
 
     private void btnClientesAdmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClientesAdmActionPerformed
-      
+
         telaClientesAdm telaClientesAdm = new telaClientesAdm();
         telaClientesAdm.setVisible(true);
     }//GEN-LAST:event_btnClientesAdmActionPerformed
-
-    private void btnOpcoesBarbeariaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOpcoesBarbeariaActionPerformed
-        
-        telaOpcoesBarbearia telaOpcoesBarbearia = new telaOpcoesBarbearia();
-        telaOpcoesBarbearia.setVisible(true);
-    }//GEN-LAST:event_btnOpcoesBarbeariaActionPerformed
-
-    private void btnSuporteAdmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSuporteAdmActionPerformed
-       
-        telaSuporteAdm telaSuporteAdm = new telaSuporteAdm();
-        telaSuporteAdm.setVisible(true);
-    }//GEN-LAST:event_btnSuporteAdmActionPerformed
 
     /**
      * @param args the command line arguments
@@ -218,9 +243,18 @@ public class telaInicialAdm extends javax.swing.JFrame {
     private javax.swing.JButton btnAgendamento;
     private javax.swing.JButton btnClientesAdm;
     private javax.swing.JButton btnConfHorario;
-    private javax.swing.JButton btnOpcoesBarbearia;
     private javax.swing.JButton btnProfissionais;
     private javax.swing.JButton btnServicos;
-    private javax.swing.JButton btnSuporteAdm;
+    private javax.swing.JLabel lbFundo;
+    private javax.swing.JLabel lbLogo;
+    private javax.swing.JLabel lbTextoAgend;
+    private javax.swing.JLabel lbTextoBarb;
+    private javax.swing.JLabel lbTextoBarbe;
+    private javax.swing.JLabel lbTextoMeusA;
+    private javax.swing.JLabel lbTextoMeusAgen;
+    private javax.swing.JLabel lbTextoOpcao;
+    private javax.swing.JLabel lbTextoOpcaoDe;
+    private javax.swing.JLabel lbTextoSupor;
+    private javax.swing.JLabel lbTextoSuporte;
     // End of variables declaration//GEN-END:variables
 }
