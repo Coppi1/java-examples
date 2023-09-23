@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en-us"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+<h:head>
+    <title>Cadastro - Endereco</title>
+    <h:outputScript name="primefaces/locales/locale-pt.js"/>
+</h:head>
+<h:body>
+
+    <h:form>
+        <p:panel header="Cadastro de Endereco">
+
+            <p:messages id="mensagem_confirmacao" closable="true"/>
+
+            <h:panelGrid id="campos">
+                <p:outputLabel value="Código"/>
+                <p:inputText rendered="true" maxlength="5" value="#{enderecoController.e.id}" readonly="true"/>
+
+                <p:outputLabel value="Rua"/>
+                <p:inputText size="60" maxlength="200" value="#{enderecoController.e.rua}"
+                             required="true" requiredMessage="O campo Rua é obrigadorio!"/>
+
+                <p:outputLabel value="Número"/>
+                <p:inputText size="2" maxlength="5" value="#{enderecoController.e.num}"
+                             required="true" requiredMessage="O campo número é obrigadorio!"
+                             converterMessage="Informe um valor válido! (apenas números)"/>
+
+                <p:outputLabel value="Bairro"/>
+                <p:inputText size="40" maxlength="100" value="#{enderecoController.e.bairro}"
+                             required="true" requiredMessage="O campo Bairro é obrigadorio!"/>
+
+                <p:outputLabel value="Cidade"/>
+                <p:inputText size="50" maxlength="100" value="#{enderecoController.e.cidade}"
+                             required="true" requiredMessage="O campo Cidade é obrigadorio!"/>
+
+
+                <p:outputLabel for="@next" value="Selecione um"/>
+                <p:selectOneMenu id="longItemLabel" value="#{enderecoController.e.estado}">
+                    <f:selectItem itemLabel="Acre" itemValue="Acre"/>
+                    <f:selectItem itemLabel="Alagoas" itemValue="Alagoas"/>
+                    <f:selectItem itemLabel="Bahia" itemValue="Bahia"/>
+                    <f:selectItem itemLabel="Ceará" itemValue="Ceará"/>
+                    <f:selectItem itemLabel="Espírito Santo" itemValue="Espírito Santo"/>
+                    <f:selectItem itemLabel="Goiás" itemValue="Goiás"/>
+                    <f:selectItem itemLabel="Mato Grosso" itemValue="Mato Grosso"/>
+                    <f:selectItem itemLabel="Mato Grosso do Sul" itemValue="Mato Grosso do Sul"/>
+                    <f:selectItem itemLabel="Minas Gerais" itemValue="Minas Gerais"/>
+                    <f:selectItem itemLabel="Paraíba" itemValue="Paraíba"/>
+                    <f:selectItem itemLabel="Paraná" itemValue="Paraná"/>
+                    <f:selectItem itemLabel="Pernambuco" itemValue="Pernambuco"/>
+                    <f:selectItem itemLabel="Piauí" itemValue="Piauí"/>
+                    <f:selectItem itemLabel="Rio de Janeiro" itemValue="Rio de Janeiro"/>
+                    <f:selectItem itemLabel="Rio Grande do Norte" itemValue="Rio Grande do Norte"/>
+                    <f:selectItem itemLabel="Rio Grande do Sul" itemValue="Rio Grande do Sul"/>
+                    <f:selectItem itemLabel="Rondônia" itemValue="Rondônia"/>
+                    <f:selectItem itemLabel="Roraima" itemValue="Roraima"/>
+                    <f:selectItem itemLabel="Santa Catarina" itemValue="Santa Catarina"/>
+                    <f:selectItem itemLabel="São Paulo" itemValue="São Paulo"/>
+                    <f:selectItem itemLabel="Sergipe" itemValue="Sergipe"/>
+                    <f:selectItem itemLabel="Tocantins" itemValue="Tocantins"/>
+                    <f:selectItem itemLabel="Distrito Federal" itemValue="Distrito Federal"/>
+                </p:selectOneMenu>
+
+
+                <p:outputLabel value="CEP"/>
+                <p:inputText size="30" maxlength="15" value="#{enderecoController.e.cep}"
+                             required="true" requiredMessage="O campo CEP é obrigadorio!"
+                             converterMessage="Informe um valor válido! (apenas números)"/>
+
+                <p:outputLabel value="Complemento"/>
+                <p:inputText size="100" maxlength="400" value="#{enderecoController.e.complemento}"/>
+
+                <p:commandButton value="Cadastrar!"
+                                 actionListener="#{enderecoController.salvar()}"
+                                 update="mensagem_confirmacao campos"/>
+
+            </h:panelGrid>
+
+        </p:panel>
+    </h:form>
+
+</h:body>
+</html>
