@@ -1,4 +1,4 @@
-package model;
+package br.com.exhibernatejpa.model;
 
 
 import jakarta.persistence.Entity;

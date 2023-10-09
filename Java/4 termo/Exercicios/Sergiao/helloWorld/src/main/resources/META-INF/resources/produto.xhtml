@@ -43,7 +43,7 @@
                 <p:inputText maxlength="7" value="#{produtoController.produto.preco}"
                              required="true" requiredMessage="O campo preço é obrigadorio!"
                              converterMessage="Informe um valor válido! (apenas números)">
-                    <f:convertNumber pattern="0.00"/>
+                    <f:convertNumber type="currency" pattern="0.00"/>
                 </p:inputText>
 
                 <p:outputLabel value="Data de Validade"/>

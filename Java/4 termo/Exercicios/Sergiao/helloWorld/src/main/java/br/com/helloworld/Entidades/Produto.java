@@ -13,7 +13,6 @@ import java.util.Locale;
 @Component
 @ViewScoped
 @Data
-
 public class Produto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

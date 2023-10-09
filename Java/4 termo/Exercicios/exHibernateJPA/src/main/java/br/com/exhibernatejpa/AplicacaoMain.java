@@ -1,10 +1,11 @@
 package br.com.exhibernatejpa;
 
+import br.com.exhibernatejpa.DAO.ClienteDAO;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 import jakarta.persistence.Query;
-import model.Cliente;
+import br.com.exhibernatejpa.model.Cliente;
 
 import java.util.List;
 
@@ -64,6 +65,14 @@ public class AplicacaoMain {
         // Finalizando as comunicações com BD
         entityManager.close();
         entityManFac.close();
+
+
+        //usando classe DAO
+        ClienteDAO cDao = new ClienteDAO();
+        Cliente cli = new Cliente();
+        cli.setNome("Teste1909");
+        cli.setEmail("email@teste");
+        cDao.inseriCliente(cli);
 
     }
 }
