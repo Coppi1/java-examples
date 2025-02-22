@@ -42,12 +42,7 @@
                              required="true" requiredMessage="O campo Ano do Modelo é obrigadorio!"
                              converterMessage="Informe um valor válido! (apenas números)"/>
 
-                <p:outputLabel value="Valor do Veículo"/>
-                <p:inputText value="#{carroController.carro.valor}"
-                             required="true" requiredMessage="O campo Valor é obrigadorio!"
-                             converterMessage="Informe um valor válido! (apenas números)">
-                    <f:convertNumber type="currency" pattern="0.00"/>
-                </p:inputText>
+
 
 
                 <p:commandButton value="Cadastrar!"
