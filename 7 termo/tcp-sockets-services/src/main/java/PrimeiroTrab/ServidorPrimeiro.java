@@ -1,3 +1,5 @@
+package PrimeiroTrab;
+
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -5,13 +7,13 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.logging.Logger;
 
-public class Servidor {
+public class ServidorPrimeiro {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-        Logger logger = Logger.getLogger(Servidor.class.getName());
+        Logger logger = Logger.getLogger(ServidorPrimeiro.class.getName());
 
         logger.info("Iniciando o servidor!");
         ServerSocket servidor = new ServerSocket(40000);
-        logger.info("Servidor iniciado com sucesso!");
+        logger.info("PrimeiroTrab.ServidorPrimeiro iniciado com sucesso!");
 
         while (true) {
             logger.info("Aceitando conexões!");
