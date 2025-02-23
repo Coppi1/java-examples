@@ -1,6 +1,8 @@
 package SegundoTrab;
 
 import SegundoTrab.Model.Cliente;
+import Utils.ServerCriptografiaUtils;
+
 import java.io.*;
 import java.net.*;
 import java.util.HashMap;
@@ -56,7 +58,12 @@ public class ServidorSegundo {
 
                 // Autenticação
                 String usuario = (String) entrada.readObject();
-                String senha = (String) entrada.readObject();
+
+                String senhaCriptografada = (String) entrada.readObject();
+
+                registrarLog("Senha Criptografada: "+ senhaCriptografada);
+
+                String senha = ServerCriptografiaUtils.descriptografar(senhaCriptografada);
 
                 clienteAutenticado = autenticar(usuario, senha);
                 if (clienteAutenticado == null) {
