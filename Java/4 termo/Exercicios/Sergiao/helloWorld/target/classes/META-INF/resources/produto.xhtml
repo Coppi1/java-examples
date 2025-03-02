@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en-us"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+<h:head>
+    <title>Projeto</title>
+    <h:outputScript name="primefaces/locales/locale-pt.js"/>
+</h:head>
+
+<h:body>
+    <h:form>
+        <p:panel header="Produto">
+
+            <p:messages id="mensagem" closable="true"/>
+
+            <h:panelGrid id="painelCampos" columns="2">
+                <p:outputLabel value="Código"/>
+                <p:inputText size="2" maxlength="5" value="#{produtoController.produto.cod}"
+                readonly="true">
+                </p:inputText>
+
+                <p:outputLabel value="Nome"/>
+                <p:inputText size="40" maxlength="100" value="#{produtoController.produto.nome}"
+                             required="true" requiredMessage="O campo nome é obrigadorio!"/>
+
+                <p:outputLabel value="Quantidade"/>
+                <p:inputText size="3" maxlength="5" value="#{produtoController.produto.qtd}"
+                             required="true" requiredMessage="O campo quantidade é obrigadorio!"
+                             converterMessage="Informe um valor válido! (apenas números)"
+                             validatorMessage="O campo quantidade aceita valor maior que 0.">
+                    <f:validateDoubleRange minimum="0.10"/>
+                    <f:convertNumber pattern="0.00"/>
+                </p:inputText>
+
+                <p:outputLabel value="Preço"/>
+                <p:inputText maxlength="7" value="#{produtoController.produto.preco}"
+                             required="true" requiredMessage="O campo preço é obrigadorio!"
+                             converterMessage="Informe um valor válido! (apenas números)">
+                    <f:convertNumber pattern="0.00"/>
+                </p:inputText>
+
+                <p:outputLabel value="Data de Validade"/>
+                <p:calendar readonlyInput="true" pattern="dd/MM/yyyy" value="#{produtoController.produto.validade}"
+                            required="true" requiredMessage="O campo data é obrigadorio!"/>
+            </h:panelGrid>
+            <h:panelGrid>
+                <p:commandButton value="Salvar"
+                                 actionListener="#{produtoController.salvar()}"
+                                 update="mensagem painelCampos"/>
+            </h:panelGrid>
+
+        </p:panel>
+
+    </h:form>
+</h:body>
+
+</html>
