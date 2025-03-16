@@ -1,4 +1,4 @@
-package com.example.servletsendpoints.exerciciosServlet;
+package com.example.servletEndPoints.exerciciosServlet;
 
 
 import jakarta.servlet.ServletException;

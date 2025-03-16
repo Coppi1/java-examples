@@ -1,4 +1,4 @@
-package com.example.servletsendpoints.exercicioBancoAuth.DAO;
+package com.example.servletEndPoints.exercicioBancoAuth.DAO;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

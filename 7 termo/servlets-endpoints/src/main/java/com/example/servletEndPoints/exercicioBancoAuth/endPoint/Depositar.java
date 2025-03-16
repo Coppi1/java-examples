@@ -1,6 +1,6 @@
-package com.example.servletsendpoints.exercicioBancoAuth.EndPoint;
+package com.example.servletEndPoints.exercicioBancoAuth.endPoint;
 
-import com.example.servletsendpoints.exercicioBancoAuth.DAO.BancoDAO;
+import com.example.servletEndPoints.exercicioBancoAuth.DAO.BancoDAO;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
