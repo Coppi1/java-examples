@@ -1,4 +1,4 @@
-package Services;
+package soapHelloWorld.Services;
 
 import jakarta.jws.WebMethod;
 import jakarta.jws.WebService;
