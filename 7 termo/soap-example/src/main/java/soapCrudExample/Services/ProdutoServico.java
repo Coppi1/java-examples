@@ -5,6 +5,7 @@ import jakarta.jws.WebParam;
 import jakarta.jws.WebResult;
 import jakarta.jws.WebService;
 import soapCrudExample.Models.Produto;
+import soapCrudExample.Repository.ProdutoRepository;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -13,41 +14,76 @@ import java.util.List;
 
 @WebService
 public class ProdutoServico {
-    private List<Produto> produtos;
-    private Long ultimoCodigo = 0L;
+    private final ProdutoRepository repository;
 
     public ProdutoServico() {
-        produtos = new ArrayList<>();
-
-        adicionarProdutoExemplo("Produto1", new BigDecimal("55.50"), 100, LocalDate.now().plusDays(7));
-        adicionarProdutoExemplo("Produto2", new BigDecimal("25.00"), 50, LocalDate.now().plusDays(3));
+        this.repository = new ProdutoRepository();
+        inicializarDadosExemplo();
     }
 
-    private void adicionarProdutoExemplo(String nome, BigDecimal preco, Integer quantidade, LocalDate validade) {
-        ultimoCodigo++;
-        produtos.add(new Produto(ultimoCodigo, nome, preco, quantidade, validade));
+    private void inicializarDadosExemplo() {
+        if (repository.listarProdutos().isEmpty()) {
+            criarProdutoExemplo("Produto 1", new BigDecimal("55.50"), 100, LocalDate.now().plusDays(7));
+            criarProdutoExemplo("Produto 2", new BigDecimal("25.00"), 50, LocalDate.now().plusDays(3));
+        }
+    }
+
+    private void criarProdutoExemplo(String nome, BigDecimal preco, Integer quantidade, LocalDate validade) {
+        Produto produto = new Produto(null, nome, preco, quantidade, validade);
+        repository.incluirProduto(produto);
     }
 
     @WebMethod(operationName = "incluirProduto")
     @WebResult(name = "produtoInserido")
-    public Produto salvarProduto(@WebParam(name = "nome") String nome, @WebParam(name = "preco") BigDecimal preco, @WebParam(name = "quantidade") Integer quantidade, @WebParam(name = "validade") String validadeStr) {
-        LocalDate validade = LocalDate.parse(validadeStr);
+    public Produto salvarProduto(
+            @WebParam(name = "nome") String nome,
+            @WebParam(name = "preco") BigDecimal preco,
+            @WebParam(name = "quantidade") Integer quantidade,
+            @WebParam(name = "validade") String validadeStr) {
 
-        ultimoCodigo++;
-        Produto novoProduto = new Produto(ultimoCodigo, nome, preco, quantidade, validade);
-        produtos.add(novoProduto);
+        LocalDate validade = LocalDate.parse(validadeStr);
+        Produto novoProduto = new Produto(null, nome, preco, quantidade, validade);
+        repository.incluirProduto(novoProduto);
         return novoProduto;
     }
 
     @WebMethod(operationName = "listarProdutos")
     @WebResult(name = "produto")
     public List<Produto> listarProdutos() {
-        return produtos;
+        return repository.listarProdutos();
     }
 
     @WebMethod(operationName = "buscarProdutoPorCodigo")
     @WebResult(name = "produto")
     public Produto buscarPorCodigo(@WebParam(name = "codigo") Long codigo) {
-        return produtos.stream().filter(p -> p.getCodigo().equals(codigo)).findFirst().orElse(null);
+        return repository.buscarProdutoPorCodigo(codigo);
+    }
+
+    @WebMethod(operationName = "atualizarProduto")
+    @WebResult(name = "produtoAtualizado")
+    public Produto atualizarProduto(
+            @WebParam(name = "codigo") Long codigo,
+            @WebParam(name = "nome") String nome,
+            @WebParam(name = "preco") BigDecimal preco,
+            @WebParam(name = "quantidade") Integer quantidade,
+            @WebParam(name = "validade") String validadeStr) {
+
+        Produto produtoExistente = repository.buscarProdutoPorCodigo(codigo);
+        if (produtoExistente == null) {
+            throw new RuntimeException("Produto não encontrado com código: " + codigo);
+        }
+
+        produtoExistente.setNome(nome);
+        produtoExistente.setPreco(preco);
+        produtoExistente.setQuantidade(quantidade);
+        produtoExistente.setValidade(LocalDate.parse(validadeStr));
+
+        return repository.editarProduto(produtoExistente);
+    }
+
+    @WebMethod(operationName = "removerProduto")
+    @WebResult(name = "sucesso")
+    public boolean removerProduto(@WebParam(name = "codigo") Long codigo) {
+        return repository.excluirProdutoPorCodigo(codigo);
     }
 }
