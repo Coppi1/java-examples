@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "3a3cf97c-b95e-44d9-afc3-21d0f6d0e6b9",
+		"name": "Java Rest Examples",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37931016"
+	},
+	"item": [
+		{
+			"name": "Conversão Moeda",
+			"item": [
+				{
+					"name": "real-para-dola",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/moeda/real-para-dolar/100",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"moeda",
+								"real-para-dolar",
+								"100"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "dolar-para-real",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/moeda/dolar-para-real/50",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"moeda",
+								"dolar-para-real",
+								"50"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "real-para-euro",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "euro-para-real",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "real-para-guarani",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "guarani-para-real",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "real-para-peso-argentino",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "peso-argentino-para-real",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Conversão Temperatura",
+			"item": [
+				{
+					"name": "celsius-para-fahrenheit",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "celsius-para-kelvin",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "fahrenheit-para-celsius",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "kelvin-para-celsius",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Médias",
+			"item": [
+				{
+					"name": "aritmetica-dois",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "ponderada-dois",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "aritmetica-tres",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "ponderada-tres",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
